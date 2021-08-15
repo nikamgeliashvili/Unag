@@ -53,6 +53,17 @@ a:hover {
   transition: .3s;
   border-radius: 10px; }
 
+.slider-bg {
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  z-index: 79; }
+
+.center {
+  text-align: center; }
+
 header {
   position: absolute;
   top: 0;
@@ -61,16 +72,107 @@ header {
   justify-content: space-between;
   padding: 25px;
   align-items: center;
-  z-index: 999; }
+  z-index: 200;
+  font-family: 'Conv_bpg-web-001-caps-webfont'; }
+  header .registration, header .common-form {
+    font-family: 'Conv_bpg_arial_2009';
+    border-radius: 10px;
+    margin-top: 100px;
+    width: 40%;
+    background-color: #FFFFFF;
+    color: #2C3E50;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    padding: 30px 5%;
+    z-index: 900;
+    box-shadow: 0px 0px 4px 5px; }
+    header .registration button, header .common-form button {
+      width: 100%;
+      padding: 10px;
+      border-radius: 7px;
+      color: white;
+      background: #57A3C2;
+      outline: navajowhite;
+      margin: 10px auto;
+      cursor: pointer; }
+    header .registration .close, header .common-form .close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer; }
+    header .registration .form-checkbox a, header .common-form .form-checkbox a {
+      color: #2C3E50;
+      text-decoration: underline; }
+    header .registration input::-webkit-outer-spin-button,
+    header .registration input::-webkit-inner-spin-button, header .common-form input::-webkit-outer-spin-button,
+    header .common-form input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0; }
+    header .registration .rotate, header .common-form .rotate {
+      transform: rotate(180deg); }
+    header .registration .form-select, header .common-form .form-select {
+      position: relative; }
+      header .registration .form-select select, header .common-form .form-select select {
+        text-transform: none;
+        padding: 10px;
+        border: 1px solid #BBC8D3;
+        width: 100%;
+        color: #777;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        margin-bottom: 15px; }
+      header .registration .form-select .dropdown-img, header .common-form .form-select .dropdown-img {
+        position: absolute;
+        top: 12px;
+        right: 15px; }
+        header .registration .form-select .dropdown-img img, header .common-form .form-select .dropdown-img img {
+          transition: .3s ease-in-out; }
+    header .registration .label-before, header .registration .field input:valid + label::before, header .common-form .field .registration input:valid + label::before, header .registration .field input:focus + label::before, header .common-form .field .registration input:focus + label::before, header .common-form .label-before, header .registration .field .common-form input:valid + label::before, header .common-form .field input:valid + label::before, header .registration .field .common-form input:focus + label::before, header .common-form .field input:focus + label::before {
+      line-height: 20px;
+      font-size: 12px;
+      top: -10px;
+      background: #fff;
+      padding: 0 6px;
+      left: 9px; }
+    header .registration .field, header .common-form .field {
+      position: relative;
+      height: 42px;
+      margin-bottom: 15px; }
+      header .registration .field label::before, header .common-form .field label::before {
+        content: attr(title);
+        position: absolute;
+        top: 2px;
+        left: 15px;
+        line-height: 40px;
+        font-size: 14px;
+        color: #777;
+        transition: 300ms all; }
+      header .registration .field input, header .common-form .field input {
+        width: 100%;
+        line-height: 40px;
+        padding: 0 15px;
+        box-sizing: border-box;
+        font-size: 14px;
+        color: #2C3E50;
+        border: 1px solid #BBC8D3;
+        border-radius: 3px; }
+        header .registration .field input:valid + label::before, header .common-form .field input:valid + label::before {
+          content: attr(data-title); }
+    header .registration .title, header .common-form .title {
+      font-size: 20px;
+      text-align: center;
+      padding: 10px 0 30px; }
   header .header-left ul, header .header-right ul {
     display: flex;
     align-items: center; }
-    header .header-left ul li, header .header-right ul li {
+    header .header-left ul li a, header .header-right ul li a {
+      color: white;
+      padding: 8px 18px;
       display: flex;
       align-items: center; }
-      header .header-left ul li a, header .header-right ul li a {
-        color: white;
-        padding: 8px 18px; }
+      header .header-left ul li a span, header .header-right ul li a span {
+        margin-top: 3px; }
 
 .main-header {
   background: transparent !important; }
@@ -79,7 +181,28 @@ header {
   font-size: 32px;
   color: #2C3E50;
   text-align: center;
-  padding: 30px 20px; }
+  padding: 30px 20px;
+  font-family: 'Conv_bpg-web-001-caps-webfont'; }
+
+.common-title {
+  font-size: 28px;
+  padding: 10px 0px;
+  color: #2C3E50; }
+
+.slick-dots {
+  bottom: 30px;
+  z-index: 111; }
+  .slick-dots li button:before {
+    color: white;
+    font-size: 23px;
+    opacity: 1; }
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: white;
+  font-size: 22px;
+  border: 1px solid white;
+  border-radius: 50%; }
 
 footer {
   background: #5A5A5A; }
@@ -127,27 +250,36 @@ footer {
 @font-face {
   font-family: 'Conv_bpg-web-001-caps-webfont';
   src: url("../../fonts/bpg-web-001-caps-webfont.eot");
-  src: local("☺"), url("../../fonts/bpg-web-001-caps-webfont.woff") format("woff"), url("fonts/bpg-web-001-caps-webfont.ttf") format("truetype"), url("fonts/bpg-web-001-caps-webfont.svg") format("svg");
+  src: local("☺"), url("../../fonts/bpg-web-001-caps-webfont.woff") format("woff"), url("../../fonts/bpg-web-001-caps-webfont.ttf") format("truetype"), url("../../fonts/bpg-web-001-caps-webfont.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
-.main-container .bg {
-  width: 100%;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.4);
-  position: absolute;
-  top: 0; }
+@font-face {
+  font-family: 'BPG WEB 001';
+  src: url("../../fonts/bpg-web-001-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/bpg-web-001-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/bpg-web-001-webfont.woff2") format("woff2"), url("../../fonts/bpg-web-001-webfont.woff") format("woff"), url("../../fonts/bpg-web-001-webfont.ttf") format("truetype"), url("../../fonts/bpg-web-001-webfont.svg#bpg_web_001regular") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: 'Conv_bpg_arial_2009';
+  src: url("../../fonts/bpg_arial_2009.eot");
+  src: local("☺"), url("../../fonts/bpg_arial_2009.woff") format("woff"), url("../../fonts/bpg_arial_2009.ttf") format("truetype"), url("../../fonts/bpg_arial_2009.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 .main-container .banner-text {
   position: absolute;
   top: 50%;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  z-index: 99;
+  font-family: 'Conv_bpg-web-001-caps-webfont'; }
   .main-container .banner-text .banner-title {
     font-size: 42px;
     color: white; }
   .main-container .banner-text .banner-buttons {
     display: flex;
     justify-content: center;
-    margin-top: 15px; }
+    margin-top: 15px;
+    font-family: 'BPG WEB 001'; }
     .main-container .banner-text .banner-buttons a {
       margin: 5px;
       display: flex;
@@ -157,7 +289,10 @@ footer {
   width: 100%; }
 .main-container .main-text {
   width: 80%;
-  margin: 0 auto 30px; }
+  margin: 0 auto 30px;
+  color: #2C3E50; }
+  .main-container .main-text p {
+    font-family: 'Conv_bpg_arial_2009'; }
 .main-container .category-container {
   width: 100%;
   padding: 60px 10%;
@@ -169,7 +304,8 @@ footer {
     position: relative;
     width: calc(25% - 9px);
     transition: 0.5s;
-    margin-top: 10px; }
+    margin-top: 10px;
+    font-family: 'Conv_bpg-web-001-caps-webfont'; }
     .main-container .category-container .category a .cat-img {
       width: 100%; }
     .main-container .category-container .category span {
@@ -196,7 +332,8 @@ footer {
         top: 50px;
         max-height: 150px;
         overflow: hidden;
-        padding: 5px; }
+        padding: 5px;
+        font-family: 'Conv_bpg_arial_2009'; }
       .main-container .category-container .category .category-info .h-courses {
         bottom: 70px;
         padding: 5px; }
@@ -211,7 +348,8 @@ footer {
         position: absolute;
         bottom: 20px;
         align-items: center;
-        left: 20%; }
+        left: 20%;
+        font-family: 'Conv_bpg_arial_2009'; }
         .main-container .category-container .category .category-info .m-button a span {
           color: #57A3C2; }
     .main-container .category-container .category:hover .category-info {
@@ -220,7 +358,7 @@ footer {
 .main-container .course-section {
   width: 100%;
   background: #F2F2F2;
-  margin: 0 auto 30px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   padding: 30px 10%; }
@@ -230,8 +368,19 @@ footer {
       width: 100%; }
   .main-container .course-section .describe {
     width: 50%;
-    padding: 30px;
+    padding: 20px;
     background: white; }
+    .main-container .course-section .describe .describe-text {
+      max-height: 261px;
+      overflow: hidden; }
+    .main-container .course-section .describe .main-title {
+      font-size: 28px;
+      text-align: left;
+      padding: 10px 0px;
+      color: #2C3E50; }
+    .main-container .course-section .describe p {
+      font-family: 'Conv_bpg_arial_2009';
+      color: #2C3E50; }
     .main-container .course-section .describe span {
       color: #2980B9; }
     .main-container .course-section .describe .course-button {
@@ -240,7 +389,59 @@ footer {
       .main-container .course-section .describe .course-button a {
         padding: 10px; }
         .main-container .course-section .describe .course-button a span {
-          color: #2C3E50; }
+          color: #2C3E50;
+          font-family: 'Conv_bpg-web-001-caps-webfont'; }
+        .main-container .course-section .describe .course-button a img {
+          padding-left: 7px; }
+.main-container .video-section {
+  padding: 20px 10%;
+  background: #F2F2F2; }
+  .main-container .video-section .video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .main-container .video-section .video-container .video-box {
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: white;
+      margin: 5px; }
+      .main-container .video-section .video-container .video-box video {
+        width: 100%; }
+      .main-container .video-section .video-container .video-box .video-title {
+        font-size: 20px;
+        padding: 8px 0; }
+        .main-container .video-section .video-container .video-box .video-title a {
+          color: #2C3E50;
+          font-family: 'Conv_bpg-web-001-caps-webfont';
+          padding: 7px 10px 3px;
+          transition: .3s; }
+          .main-container .video-section .video-container .video-box .video-title a:hover {
+            color: #57A3C2; }
+      .main-container .video-section .video-container .video-box .video-tags {
+        line-height: 30px;
+        padding: 0 10px 15px; }
+        .main-container .video-section .video-container .video-box .video-tags a {
+          color: #2C3E50;
+          border: 1px solid #2C3E503D;
+          border-radius: 5px;
+          font-size: 14px;
+          padding: 3px;
+          transition: .3s; }
+          .main-container .video-section .video-container .video-box .video-tags a:hover {
+            border: 1px solid #2C3E50; }
+  .main-container .video-section .slick-next {
+    right: 0;
+    top: -6%;
+    background: transparent; }
+    .main-container .video-section .slick-next:before {
+      content: url("../../images/arr-next.png "); }
+  .main-container .video-section .slick-prev {
+    right: 50px;
+    top: -6%;
+    background: transparent;
+    left: unset; }
+    .main-container .video-section .slick-prev:before {
+      content: url("../../images/arr-prev.png "); }
 .main-container .banner {
   background: #57A3C2;
   padding: 40px 30px 50px;
@@ -248,16 +449,37 @@ footer {
   .main-container .banner .main-title {
     color: white;
     width: 40%;
-    margin: 0 auto; }
-.main-container .reviews {
-  display: flex;
-  align-items: center;
-  width: 70%;
-  margin: 0px auto 35px; }
-  .main-container .reviews .r-name {
-    text-align: center;
-    padding-top: 10px; }
-  .main-container .reviews img {
-    padding: 15px; }
+    margin: 0 auto;
+    font-family: 'Conv_bpg-web-001-caps-webfont'; }
+.main-container .review-slider {
+  width: 100%;
+  padding: 0 15%; }
+  .main-container .review-slider .slick-next {
+    right: 10%;
+    top: 45%;
+    background: transparent; }
+    .main-container .review-slider .slick-next:before {
+      content: url("../../images/arr-next.png "); }
+  .main-container .review-slider .slick-prev {
+    left: 10%;
+    top: 45%;
+    background: transparent; }
+    .main-container .review-slider .slick-prev:before {
+      content: url("../../images/arr-prev.png "); }
+  .main-container .review-slider .review-slide {
+    display: flex;
+    align-items: center;
+    margin: 0px auto 35px; }
+    .main-container .review-slider .review-slide p {
+      font-family: 'Conv_bpg_arial_2009'; }
+    .main-container .review-slider .review-slide span {
+      font-family: 'Conv_bpg-web-001-caps-webfont'; }
+    .main-container .review-slider .review-slide .r-name {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center; }
+    .main-container .review-slider .review-slide img {
+      padding: 15px; }
 
 /*# sourceMappingURL=main.css.map */

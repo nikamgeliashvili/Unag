@@ -14,6 +14,10 @@
 
 
 <body>
+
+	<div class="slider-bg">
+				
+	</div>
 	
 
 	<header>
@@ -39,21 +43,155 @@
 
 		<div class="header-right">
 			<ul>
-				<li>
+				<li class="reg-form">
 					<a href="#">რეგისტრაცია</a>
 				</li>
 
 				<li>
-				
-					<a href="#" class="d-button"> 	<img src="images/auth.svg" alt=""> ავტორიზაცია</a>
+					<a href="#" class="d-button"> 	<img src="images/auth.svg" alt=""> <span>ავტორიზაცია</span></a>
 				</li>
 			</ul>
 		</div>
+
+		<section class="registration common-form">
+			<h3 class="title">
+				რეგისტრაცია
+			</h3>
+
+
+			
+
+			<div class="close">
+				<img src="images/close.svg " alt="">
+			</div>
+
+			<form action="">
+				
+				<div class="field">
+					<input type="text" required autocomplete="off" id="name" value="">
+					<label for="name" title="სახელი" data-title="სახელი"></label>
+				</div>
+
+				<div class="field">
+					<input type="text" required autocomplete="off" id="username" value="">
+					<label for="username" title="გვარი" data-title="გვარი"></label>
+				</div>
+
+				<div class="field">
+					<input placeholder="დაბადების თარიღი" class="textbox-n" type="text" onfocus="(this.type='date')" data-title="დაბადების თარიღი" onblur="(this.type='text')" id="date" />
+				</div>
+
+				<div class="form-select">
+					<select name="" id="">
+						<option value="">გენდერი</option>
+						<option value="">გენდერი</option>
+						<option value="">გენდერი</option> b 
+					</select>
+
+					<div class="dropdown-img">
+						<img src="images/select-dropdown.png " alt="">
+					</div>
+				</div>
+
+				<div class="form-select">
+					<select name="" id="">
+						<option value="">რეგიონი</option>
+						<option value="">რეგიონი</option>
+						<option value="">რეგიონი</option> b 
+					</select>
+
+					<div class="dropdown-img">
+						<img src="images/select-dropdown.png " alt="">
+					</div>
+				</div>
+
+
+				<div class="field">
+					<input type="number" required autocomplete="off" id="phone" value="">
+					<label for="phone" title="ტელეფონი" data-title="ტელეფონი"></label>
+				</div>
+
+				<div class="field">
+					<input type="email" required autocomplete="off" id="ph" value="">
+					<label for="ph" title="ელფოსტა" data-title="ელფოსტა"></label>
+				</div>
+
+				
+				<div class="field">
+					<input type="password" required autocomplete="off" id="password">
+					<label for="password" title="პაროლი" data-title="პაროლი"></label>
+				</div>
+
+
+				<div class="form-checkbox">
+					<input type="checkbox" id="terms" name="">
+					<label for="terms">ვეთანხმები <a href="#">წესებსა და პირობებს</a></label>
+				</div>
+			
+				<div class="form-checkbox">
+					<input type="checkbox" id="news" name="">
+					<label for="news">მსურს მივიღო სიახლეები</label>
+				</div>
+
+				<button class="reg-button">
+						ავტორიზაცია
+				</button>
+
+
+					
+				
+			</form>
+		</section>
+
+
+		<section class="registration common-form">
+			<h3 class="title">
+				ავტორიზაცია
+			</h3>
+
+
+			
+
+			<div class="close">
+				<img src="images/close.svg " alt="">
+			</div>
+
+			<!-- <form action="">
+			
+				<div class="field">
+					<input type="email" required autocomplete="off" id="email" value="">
+					<label for="username" title="ელფოსტა" data-title="ელფოსტა"></label>
+				</div>
+
+				
+				<div class="field">
+					<input type="password" required autocomplete="off" id="password">
+					<label for="password" title="პაროლი" data-title="პაროლი"></label>
+				</div>
+
+
+				<button class="reg-button">
+						ავტორიზაცია
+				</button>
+
+				<div class="center">
+					<span>ან</span>
+				</div>
+
+				<button class="reg-button transparent">
+					რეგისტრაცია
+				</button>
+
+
+					
+				
+			</form> -->
+		</section>
 	</header>
 
 
 	<div class="main-container">
-		
+	
 		<div class="slider-container">
 			<div class="bg"></div>
 
@@ -75,8 +213,13 @@
 
 			</div>
 
+
+			<div class="main-slider">
+				<img src="images/slide.png" alt="" class="main-img">
+				<img src="images/slide.png" alt="" class="main-img">
+				<img src="images/slide.png" alt="" class="main-img">
+			</div>
 			
-			<img src="images/slide.png" alt="" class="main-img">
 		</div>
 
 
@@ -392,7 +535,7 @@
 				<h1 class="main-title">კურსის დასახელება</h1>
 			</div>
 
-			<div>
+			<div class="describe-text">
 				<p>
 					Lorem Ipsum საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო უცვლელად მოაღწია. განსაკუთრებული პოპულარობა მას 1960-იან წლებში ტრაფარეტებმა მოუტანა, უფრო მოგვიანებით კი — Aldus PageMaker-ის ტიპის საგამომცემლო პროგრამებმა, რომლებშიც Lorem Ipsum-ის სხვადასხვა ვერსიები იყო ჩაშენებული.
 
@@ -441,7 +584,7 @@
 					<h1 class="main-title">კურსის დასახელება</h1>
 				</div>
 
-				<div>
+				<div class="describe-text">
 					<p>
 						Lorem Ipsum საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო უცვლელად მოაღწია. განსაკუთრებული პოპულარობა მას 1960-იან წლებში ტრაფარეტებმა მოუტანა, უფრო მოგვიანებით კი — Aldus PageMaker-ის ტიპის საგამომცემლო პროგრამებმა, რომლებშიც Lorem Ipsum-ის სხვადასხვა ვერსიები იყო ჩაშენებული.
 
@@ -461,43 +604,195 @@
 
 		</section>
 
+		<section class="video-section">
+			<h1 class="common-title">
+				ვიდეო
+			</h1>
+
+			<div class="video-container">
+				<div class="video-box">
+					<video controls>
+						<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+					</video>
+
+					<h3 class="video-title">
+						<a href="#">ვიდეოს სათაური</a>
+					</h3>
+
+					<div class="video-tags">
+						<a href="#">ვიდეოს ტეგი</a>
+						<a href="#">ტეგი</a>
+						<a href="#"> ტეგი2</a>
+						<a href="#">ვიდეოს ტეგი</a>
+						<a href="#">კურსის ტეგი</a>
+					</div>
+				</div>
+
+				<div class="video-box">
+					<video controls>
+						<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+					</video>
+
+					<h3 class="video-title">
+						<a href="#">ვიდეოს სათაური</a>
+					</h3>
+
+					<div class="video-tags">
+						<a href="#">ვიდეოს ტეგი</a>
+						<a href="#">ტეგი</a>
+						<a href="#"> ტეგი2</a>
+						<a href="#">ვიდეოს ტეგი</a>
+						<a href="#">კურსის ტეგი</a>
+					</div>
+				</div>
+
+				<div class="video-box">
+					<video controls>
+						<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+					</video>
+
+					<h3 class="video-title">
+						<a href="#">ვიდეოს სათაური</a>
+					</h3>
+
+					<div class="video-tags">
+						<a href="#">ვიდეოს ტეგი</a>
+						<a href="#">ტეგი</a>
+						<a href="#"> ტეგი2</a>
+						<a href="#">ვიდეოს ტეგი</a>
+						<a href="#">კურსის ტეგი</a>
+					</div>
+				</div>
+
+				<div class="video-box">
+					<video controls>
+						<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+					</video>
+
+					<h3 class="video-title">
+						<a href="#">ვიდეოს სათაური</a>
+					</h3>
+
+					<div class="video-tags">
+						<a href="#">ვიდეოს ტეგი</a>
+						<a href="#">ტეგი</a>
+						<a href="#"> ტეგი2</a>
+						<a href="#">ვიდეოს ტეგი</a>
+						<a href="#">კურსის ტეგი</a>
+					</div>
+				</div>
+
+				<div class="video-box">
+					<video controls>
+						<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+					</video>
+
+					<h3 class="video-title">
+						<a href="#">ვიდეოს სათაური</a>
+					</h3>
+
+					<div class="video-tags">
+						<a href="#">ვიდეოს ტეგი</a>
+						<a href="#">ტეგი</a>
+						<a href="#"> ტეგი2</a>
+						<a href="#">ვიდეოს ტეგი</a>
+						<a href="#">კურსის ტეგი</a>
+					</div>
+				</div>
+
+				
+			</div>
+		</section>
+
 
 		<section>
 			<div>
 				<h1 class="main-title">შეფასებები</h1>
 			</div>
 
-			<div class="reviews">
+			<div class="review-slider">
+				<div class="review-slide">
 
-				<div>
-					<p>Lorem Ipsum საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო უცვლელად მოაღწია. განსაკუთრებული პოპულარობა მას 1960-იან წლებში გამოსულმა Letraset-ის ცნობილმა ტრაფარეტებმა მოუტანა, უფრო მოგვიანებით კი — Aldus PageMaker-ის ტიპისსხვადასხვა ვერსიები იყო ჩაშენებული.</p>
-
-					<div class="r-name">
-						<span>
-							<img src="images/line.png" alt="">
-						</span>
-		
-						<span>
-							სალომე ასანიძე
-						</span>
-		
-						<span>
-							<img src="images/line.png" alt="">
-						</span>
-					</div>
-				</div>
-
-
-				<div>
-					<img src="images/img3.png" alt="">
-				</div>
+					<div>
+						<p>Lorem Ipsum საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო უცვლელად მოაღწია. განსაკუთრებული პოპულარობა მას 1960-იან წლებში გამოსულმა Letraset-ის ცნობილმა ტრაფარეტებმა მოუტანა, უფრო მოგვიანებით კი — Aldus PageMaker-ის ტიპისსხვადასხვა ვერსიები იყო ჩაშენებული.</p>
+	
+						<div class="r-name">
+							<span>
+								<img src="images/line.png" alt="">
+							</span>
 			
+							<span>
+								სალომე ასანიძე
+							</span>
+			
+							<span>
+								<img src="images/line.png" alt="">
+							</span>
+						</div>
+					</div>
+	
+	
+					<div>
+						<img src="images/img3.png" alt="">
+					</div>
+				
+				</div>
+	
+				<div class="review-slide">
+	
+					<div>
+						<p>Lorem Ipsum საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო უცვლელად მოაღწია. განსაკუთრებული პოპულარობა მას 1960-იან წლებში გამოსულმა Letraset-ის ცნობილმა ტრაფარეტებმა მოუტანა, უფრო მოგვიანებით კი — Aldus PageMaker-ის ტიპისსხვადასხვა ვერსიები იყო ჩაშენებული.</p>
+	
+						<div class="r-name">
+							<span>
+								<img src="images/line.png" alt="">
+							</span>
+			
+							<span>
+								სალომე ასანიძე
+							</span>
+			
+							<span>
+								<img src="images/line.png" alt="">
+							</span>
+						</div>
+					</div>
+	
+	
+					<div>
+						<img src="images/img3.png" alt="">
+					</div>
+				
+				</div>
+	
+				<div class="review-slide">
+	
+					<div>
+						<p>Lorem Ipsum საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო უცვლელად მოაღწია. განსაკუთრებული პოპულარობა მას 1960-იან წლებში გამოსულმა Letraset-ის ცნობილმა ტრაფარეტებმა მოუტანა, უფრო მოგვიანებით კი — Aldus PageMaker-ის ტიპისსხვადასხვა ვერსიები იყო ჩაშენებული.</p>
+	
+						<div class="r-name">
+							<span>
+								<img src="images/line.png" alt="">
+							</span>
+			
+							<span>
+								სალომე ასანიძე
+							</span>
+			
+							<span>
+								<img src="images/line.png" alt="">
+							</span>
+						</div>
+					</div>
+	
+	
+					<div>
+						<img src="images/img3.png" alt="">
+					</div>
+				
+				</div>
 			</div>
 		</section>
-
-
-
-
 
 	</div>
 
