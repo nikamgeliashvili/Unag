@@ -64,6 +64,101 @@ a:hover {
 .center {
   text-align: center; }
 
+.registration, .common-form {
+  display: none;
+  font-family: 'Conv_bpg_arial_2009';
+  border-radius: 10px;
+  margin-top: 100px;
+  width: 40%;
+  background-color: #FFFFFF;
+  color: #2C3E50;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  padding: 30px 5%;
+  z-index: 900;
+  box-shadow: 0px 0px 4px 5px; }
+  .registration button, .common-form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    color: white;
+    background: #57A3C2;
+    outline: navajowhite;
+    margin: 10px auto;
+    cursor: pointer; }
+  .registration .transparent, .common-form .transparent {
+    color: #57A3C2;
+    background: #FFFFFF;
+    border: 1px solid #57A3C2; }
+  .registration .close, .common-form .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer; }
+  .registration .form-checkbox a, .common-form .form-checkbox a {
+    color: #2C3E50;
+    text-decoration: underline; }
+  .registration input::-webkit-outer-spin-button,
+  .registration input::-webkit-inner-spin-button, .common-form input::-webkit-outer-spin-button,
+  .common-form input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+  .registration .rotate, .common-form .rotate {
+    transform: rotate(180deg); }
+  .registration .form-select, .common-form .form-select {
+    position: relative; }
+    .registration .form-select select, .common-form .form-select select {
+      text-transform: none;
+      padding: 10px;
+      border: 1px solid #BBC8D3;
+      width: 100%;
+      color: #777;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      margin-bottom: 15px; }
+    .registration .form-select .dropdown-img, .common-form .form-select .dropdown-img {
+      position: absolute;
+      top: 12px;
+      right: 15px; }
+      .registration .form-select .dropdown-img img, .common-form .form-select .dropdown-img img {
+        transition: .3s ease-in-out; }
+  .registration .label-before, .registration .field input:valid + label::before, .common-form .field .registration input:valid + label::before, .registration .field input:focus + label::before, .common-form .field .registration input:focus + label::before, .common-form .label-before, .registration .field .common-form input:valid + label::before, .common-form .field input:valid + label::before, .registration .field .common-form input:focus + label::before, .common-form .field input:focus + label::before {
+    line-height: 20px;
+    font-size: 12px;
+    top: -10px;
+    background: #fff;
+    padding: 0 6px;
+    left: 9px; }
+  .registration .field, .common-form .field {
+    position: relative;
+    height: 42px;
+    margin-bottom: 15px; }
+    .registration .field label::before, .common-form .field label::before {
+      content: attr(title);
+      position: absolute;
+      top: 2px;
+      left: 15px;
+      line-height: 40px;
+      font-size: 14px;
+      color: #777;
+      transition: 300ms all; }
+    .registration .field input, .common-form .field input {
+      width: 100%;
+      line-height: 40px;
+      padding: 0 15px;
+      box-sizing: border-box;
+      font-size: 14px;
+      color: #2C3E50;
+      border: 1px solid #BBC8D3;
+      border-radius: 3px; }
+      .registration .field input:valid + label::before, .common-form .field input:valid + label::before {
+        content: attr(data-title); }
+  .registration .title, .common-form .title {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0 30px; }
+
 header {
   position: absolute;
   top: 0;
@@ -74,95 +169,6 @@ header {
   align-items: center;
   z-index: 200;
   font-family: 'Conv_bpg-web-001-caps-webfont'; }
-  header .registration, header .common-form {
-    font-family: 'Conv_bpg_arial_2009';
-    border-radius: 10px;
-    margin-top: 100px;
-    width: 40%;
-    background-color: #FFFFFF;
-    color: #2C3E50;
-    position: absolute;
-    top: 20%;
-    left: 30%;
-    padding: 30px 5%;
-    z-index: 900;
-    box-shadow: 0px 0px 4px 5px; }
-    header .registration button, header .common-form button {
-      width: 100%;
-      padding: 10px;
-      border-radius: 7px;
-      color: white;
-      background: #57A3C2;
-      outline: navajowhite;
-      margin: 10px auto;
-      cursor: pointer; }
-    header .registration .close, header .common-form .close {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      cursor: pointer; }
-    header .registration .form-checkbox a, header .common-form .form-checkbox a {
-      color: #2C3E50;
-      text-decoration: underline; }
-    header .registration input::-webkit-outer-spin-button,
-    header .registration input::-webkit-inner-spin-button, header .common-form input::-webkit-outer-spin-button,
-    header .common-form input::-webkit-inner-spin-button {
-      -webkit-appearance: none;
-      margin: 0; }
-    header .registration .rotate, header .common-form .rotate {
-      transform: rotate(180deg); }
-    header .registration .form-select, header .common-form .form-select {
-      position: relative; }
-      header .registration .form-select select, header .common-form .form-select select {
-        text-transform: none;
-        padding: 10px;
-        border: 1px solid #BBC8D3;
-        width: 100%;
-        color: #777;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        margin-bottom: 15px; }
-      header .registration .form-select .dropdown-img, header .common-form .form-select .dropdown-img {
-        position: absolute;
-        top: 12px;
-        right: 15px; }
-        header .registration .form-select .dropdown-img img, header .common-form .form-select .dropdown-img img {
-          transition: .3s ease-in-out; }
-    header .registration .label-before, header .registration .field input:valid + label::before, header .common-form .field .registration input:valid + label::before, header .registration .field input:focus + label::before, header .common-form .field .registration input:focus + label::before, header .common-form .label-before, header .registration .field .common-form input:valid + label::before, header .common-form .field input:valid + label::before, header .registration .field .common-form input:focus + label::before, header .common-form .field input:focus + label::before {
-      line-height: 20px;
-      font-size: 12px;
-      top: -10px;
-      background: #fff;
-      padding: 0 6px;
-      left: 9px; }
-    header .registration .field, header .common-form .field {
-      position: relative;
-      height: 42px;
-      margin-bottom: 15px; }
-      header .registration .field label::before, header .common-form .field label::before {
-        content: attr(title);
-        position: absolute;
-        top: 2px;
-        left: 15px;
-        line-height: 40px;
-        font-size: 14px;
-        color: #777;
-        transition: 300ms all; }
-      header .registration .field input, header .common-form .field input {
-        width: 100%;
-        line-height: 40px;
-        padding: 0 15px;
-        box-sizing: border-box;
-        font-size: 14px;
-        color: #2C3E50;
-        border: 1px solid #BBC8D3;
-        border-radius: 3px; }
-        header .registration .field input:valid + label::before, header .common-form .field input:valid + label::before {
-          content: attr(data-title); }
-    header .registration .title, header .common-form .title {
-      font-size: 20px;
-      text-align: center;
-      padding: 10px 0 30px; }
   header .header-left ul, header .header-right ul {
     display: flex;
     align-items: center; }
@@ -174,8 +180,77 @@ header {
       header .header-left ul li a span, header .header-right ul li a span {
         margin-top: 3px; }
 
+.reg-button {
+  margin-right: 10px;
+  border-radius: 10px;
+  transition: .3s; }
+  .reg-button:hover {
+    background: #F8C934;
+    border: unset; }
+
 .main-header {
-  background: transparent !important; }
+  position: unset; }
+  .main-header .header-left ul li a, .main-header header .header-right ul li a {
+    color: #2C3E50;
+    padding: 8px 18px;
+    display: flex;
+    align-items: center; }
+  .main-header .reg-button {
+    color: #57A3C2;
+    border: 1px solid #57A3C2;
+    border-radius: 11px;
+    margin-right: 10px;
+    transition: .3s; }
+    .main-header .reg-button a {
+      color: #57A3C2; }
+      .main-header .reg-button a:hover {
+        color: white !important; }
+    .main-header .reg-button:hover {
+      background: #F8C934;
+      border: 1px solid transparent; }
+
+.avatar-upload {
+  position: relative; }
+  .avatar-upload .avatar-edit {
+    position: absolute;
+    z-index: 1;
+    bottom: 50px; }
+    .avatar-upload .avatar-edit input {
+      display: none; }
+      .avatar-upload .avatar-edit input + label {
+        margin-bottom: 0;
+        border-radius: 10px;
+        background: #57A3C2;
+        border: 1px solid transparent;
+        cursor: pointer;
+        font-weight: normal;
+        transition: all .2s ease-in-out;
+        color: white;
+        padding: 10px 40px;
+        font-family: 'Conv_bpg_arial_2009'; }
+        .avatar-upload .avatar-edit input + label:after {
+          content: "";
+          color: #757575;
+          position: absolute;
+          top: 10px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          margin: auto; }
+  .avatar-upload .avatar-preview {
+    width: 192px;
+    height: 192px;
+    position: relative;
+    border-radius: 100%;
+    border: 6px solid #F8F8F8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1); }
+    .avatar-upload .avatar-preview > div {
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
 
 .main-title {
   font-size: 32px;
@@ -249,20 +324,20 @@ footer {
 
 @font-face {
   font-family: 'Conv_bpg-web-001-caps-webfont';
-  src: url("../../fonts/bpg-web-001-caps-webfont.eot");
-  src: local("☺"), url("../../fonts/bpg-web-001-caps-webfont.woff") format("woff"), url("../../fonts/bpg-web-001-caps-webfont.ttf") format("truetype"), url("../../fonts/bpg-web-001-caps-webfont.svg") format("svg");
+  src: url("../fonts/bpg-web-001-caps-webfont.eot");
+  src: local("☺"), url("../fonts/bpg-web-001-caps-webfont.woff") format("woff"), url("../fonts/bpg-web-001-caps-webfont.ttf") format("truetype"), url("../fonts/bpg-web-001-caps-webfont.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'BPG WEB 001';
-  src: url("../../fonts/bpg-web-001-webfont.eot");
+  src: url("../fonts/bpg-web-001-webfont.eot");
   /* IE9 Compat Modes */
-  src: url("../../fonts/bpg-web-001-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/bpg-web-001-webfont.woff2") format("woff2"), url("../../fonts/bpg-web-001-webfont.woff") format("woff"), url("../../fonts/bpg-web-001-webfont.ttf") format("truetype"), url("../../fonts/bpg-web-001-webfont.svg#bpg_web_001regular") format("svg");
+  src: url("../fonts/bpg-web-001-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bpg-web-001-webfont.woff2") format("woff2"), url("../fonts/bpg-web-001-webfont.woff") format("woff"), url("../fonts/bpg-web-001-webfont.ttf") format("truetype"), url("../fonts/bpg-web-001-webfont.svg#bpg_web_001regular") format("svg");
   /* Legacy iOS */ }
 @font-face {
   font-family: 'Conv_bpg_arial_2009';
-  src: url("../../fonts/bpg_arial_2009.eot");
-  src: local("☺"), url("../../fonts/bpg_arial_2009.woff") format("woff"), url("../../fonts/bpg_arial_2009.ttf") format("truetype"), url("../../fonts/bpg_arial_2009.svg") format("svg");
+  src: url("../fonts/bpg_arial_2009.eot");
+  src: local("☺"), url("../fonts/bpg_arial_2009.woff") format("woff"), url("../fonts/bpg_arial_2009.ttf") format("truetype"), url("../fonts/bpg_arial_2009.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
 .main-container .banner-text {
@@ -434,14 +509,14 @@ footer {
     top: -6%;
     background: transparent; }
     .main-container .video-section .slick-next:before {
-      content: url("../../images/arr-next.png "); }
+      content: url("../images/arr-next.png "); }
   .main-container .video-section .slick-prev {
     right: 50px;
     top: -6%;
     background: transparent;
     left: unset; }
     .main-container .video-section .slick-prev:before {
-      content: url("../../images/arr-prev.png "); }
+      content: url("../images/arr-prev.png "); }
 .main-container .banner {
   background: #57A3C2;
   padding: 40px 30px 50px;
@@ -459,13 +534,13 @@ footer {
     top: 45%;
     background: transparent; }
     .main-container .review-slider .slick-next:before {
-      content: url("../../images/arr-next.png "); }
+      content: url("../images/arr-next.png "); }
   .main-container .review-slider .slick-prev {
     left: 10%;
     top: 45%;
     background: transparent; }
     .main-container .review-slider .slick-prev:before {
-      content: url("../../images/arr-prev.png "); }
+      content: url("../images/arr-prev.png "); }
   .main-container .review-slider .review-slide {
     display: flex;
     align-items: center;
@@ -481,5 +556,52 @@ footer {
       align-items: center; }
     .main-container .review-slider .review-slide img {
       padding: 15px; }
+
+.user-page {
+  background-color: #F2F2F2;
+  padding-bottom: 50px; }
+  .user-page .user-container {
+    width: 80%;
+    margin: 0 auto;
+    background: #ffffff;
+    display: flex;
+    padding: 30px; }
+    .user-page .user-container .avatar-upload {
+      width: 40%;
+      margin: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #BBC8D3;
+      padding: 40px 0 140px; }
+    .user-page .user-container .user-form {
+      width: 60%;
+      display: block;
+      box-shadow: unset;
+      position: unset;
+      margin-top: unset;
+      padding: 10px;
+      border-radius: unset; }
+      .user-page .user-container .user-form .d-flex {
+        justify-content: space-between; }
+        .user-page .user-container .user-form .d-flex .field {
+          width: 49%;
+          margin-bottom: 20px; }
+        .user-page .user-container .user-form .d-flex .form-select {
+          width: 49%; }
+          .user-page .user-container .user-form .d-flex .form-select select {
+            margin-bottom: 20px; }
+      .user-page .user-container .user-form button {
+        background-color: #DBE3EB;
+        color: #2C3E50; }
+      .user-page .user-container .user-form .change-button {
+        width: 50%;
+        float: right;
+        color: white;
+        background: #57A3C2;
+        transition: .3s; }
+        .user-page .user-container .user-form .change-button:hover {
+          background: #F8C934;
+          color: white; }
 
 /*# sourceMappingURL=main.css.map */

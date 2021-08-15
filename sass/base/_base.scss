@@ -85,6 +85,148 @@ a:hover {
 
 
 
+.registration, .common-form{
+    display: none;
+    font-family: 'Conv_bpg_arial_2009';
+    border-radius: 10px;
+    margin-top: 100px;
+    width: 40%;
+    background-color: #FFFFFF;
+    color: #2C3E50;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    padding: 30px 5%;
+    z-index: 900;
+    box-shadow: 0px 0px 4px 5px;
+
+
+    button{
+        width: 100%;
+        padding: 10px;
+        border-radius: 7px;
+        color: white;
+        background: #57A3C2;
+        outline: navajowhite;
+        margin: 10px auto;
+        cursor:pointer;
+    }
+
+    .transparent{
+        color: #57A3C2;
+        background: #FFFFFF;
+        border: 1px solid #57A3C2;
+    }
+    .close{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .form-checkbox{
+        a{
+            color: #2C3E50;
+            text-decoration: underline;
+        }
+    }
+
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+    .rotate{
+        transform: rotate(180deg);
+    }
+    
+   .form-select{
+        position: relative;
+
+       
+
+        select{
+            text-transform: none;
+            padding: 10px;
+            border: 1px solid #BBC8D3;
+            width: 100%;
+            color: #777;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            margin-bottom: 15px;
+        }
+
+        .dropdown-img{
+            position: absolute;
+            top: 12px;
+            right: 15px;
+
+            img{
+               transition: .3s ease-in-out;
+            }
+        }
+
+
+   }
+
+    .label-before {
+        line-height: 20px;
+        font-size: 12px;
+        top: -10px;
+        background: #fff;
+        padding: 0 6px;
+        left: 9px;
+    }
+    
+    .field {
+        position: relative;
+        height: 42px;
+        margin-bottom: 15px;
+        label::before {
+        content: attr(title);
+        position: absolute;
+        top: 2px;
+        left: 15px;
+        line-height: 40px;
+        font-size: 14px;
+        color: #777;
+        transition: 300ms all;
+        }
+
+        input {
+        width: 100%;
+        line-height: 40px;
+        padding: 0 15px;
+        box-sizing: border-box;
+        font-size: 14px;
+        color: #2C3E50;
+        border: 1px solid #BBC8D3;
+        border-radius: 3px;
+          
+            &:valid + label::before {
+                @extend .label-before;
+                content: attr(data-title);
+            }
+            &:focus + label::before {
+                @extend .label-before;
+               
+            }
+        }
+    }
+
+
+    .title{
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 0 30px;
+    }
+}
+
+
+
+
 
 header{
     position: absolute;
@@ -97,140 +239,7 @@ header{
     z-index: 200;
     font-family: 'Conv_bpg-web-001-caps-webfont';
 
-    .registration, .common-form{
-        // display: none;
-        font-family: 'Conv_bpg_arial_2009';
-        border-radius: 10px;
-        margin-top: 100px;
-        width: 40%;
-        background-color: #FFFFFF;
-        color: #2C3E50;
-        position: absolute;
-        top: 20%;
-        left: 30%;
-        padding: 30px 5%;
-        z-index: 900;
-        box-shadow: 0px 0px 4px 5px;
-
-
-        button{
-            width: 100%;
-            padding: 10px;
-            border-radius: 7px;
-            color: white;
-            background: #57A3C2;
-            outline: navajowhite;
-            margin: 10px auto;
-            cursor:pointer;
-        }
-
-        .close{
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            cursor: pointer;
-        }
-
-        .form-checkbox{
-            a{
-                color: #2C3E50;
-                text-decoration: underline;
-            }
-        }
-
-
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-        }
-
-        .rotate{
-            transform: rotate(180deg);
-        }
-        
-       .form-select{
-            position: relative;
-
-           
-
-            select{
-                text-transform: none;
-                padding: 10px;
-                border: 1px solid #BBC8D3;
-                width: 100%;
-                color: #777;
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                margin-bottom: 15px;
-            }
-
-            .dropdown-img{
-                position: absolute;
-                top: 12px;
-                right: 15px;
-
-                img{
-                   transition: .3s ease-in-out;
-                }
-            }
-
-
-       }
-
-        .label-before {
-            line-height: 20px;
-            font-size: 12px;
-            top: -10px;
-            background: #fff;
-            padding: 0 6px;
-            left: 9px;
-        }
-        
-        .field {
-            position: relative;
-            height: 42px;
-            margin-bottom: 15px;
-            label::before {
-            content: attr(title);
-            position: absolute;
-            top: 2px;
-            left: 15px;
-            line-height: 40px;
-            font-size: 14px;
-            color: #777;
-            transition: 300ms all;
-            }
-
-            input {
-            width: 100%;
-            line-height: 40px;
-            padding: 0 15px;
-            box-sizing: border-box;
-            font-size: 14px;
-            color: #2C3E50;
-            border: 1px solid #BBC8D3;
-            border-radius: 3px;
-              
-                &:valid + label::before {
-                    @extend .label-before;
-                    content: attr(data-title);
-                }
-                &:focus + label::before {
-                    @extend .label-before;
-                   
-                }
-            }
-        }
-
-
-        .title{
-            font-size: 20px;
-            text-align: center;
-            padding: 10px 0 30px;
-        }
-    }
-
+   
 
     .header-left, .header-right{
         ul{
@@ -258,9 +267,106 @@ header{
 
 }
 
-.main-header{
-    background: transparent !important;
+.reg-button{
+    margin-right: 10px;
+    border-radius: 10px;
+    transition: .3s;
+
+    &:hover{
+        background: #F8C934;
+        border: unset;
+    }
 }
+
+
+.main-header{
+    position: unset;
+
+    .header-left ul li a, header .header-right ul li a {
+        color: #2C3E50;
+        padding: 8px 18px;
+        display: flex;
+        align-items: center;
+    }
+
+    .reg-button{
+        color: #57A3C2;
+        border: 1px solid #57A3C2;
+        border-radius: 11px;
+        margin-right: 10px;
+        transition: .3s;
+        a{
+          color: #57A3C2;    
+
+          &:hover{
+            color:white !important;
+          }
+        }
+
+        &:hover{
+            background: #F8C934;
+            border: 1px solid transparent;
+        }
+
+      
+    }
+}
+
+.avatar-upload {
+    position: relative;
+ 
+    .avatar-edit {
+        position: absolute;
+        z-index: 1;
+        bottom: 50px;
+
+        input {
+            display: none;
+            + label {
+           
+              
+                margin-bottom: 0;
+                border-radius: 10px;
+                background: #57A3C2;
+                border: 1px solid transparent;
+                cursor: pointer;
+                font-weight: normal;
+                transition: all .2s ease-in-out;
+                color: white;
+                padding: 10px 40px;
+                font-family: 'Conv_bpg_arial_2009';
+              
+                &:after {
+                    content: "";
+                    color: #757575;
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    .avatar-preview {
+        width: 192px;
+        height: 192px;
+        position: relative;
+        border-radius: 100%;
+        border: 6px solid #F8F8F8;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+        > div {
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+
 
 .main-title{
     font-size: 32px;

@@ -69,12 +69,40 @@ $('.video-container').slick({
 });
 
 
-$(".close").click(function () {
-    $(".registration").css("display", "none");
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+            $('#imagePreview').hide();
+            $('#imagePreview').fadeIn(650);
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+$("#imageUpload").change(function() {
+    readURL(this);
 });
 
-$(".reg-form").click(function () {
+
+$(".close").click(function () {
+    $(".registration, .auth-form").css("display", "none");
+});
+
+$(".reg-button").click(function () {
     $(".registration").css("display", "block");
+});
+
+$(".reg-button").click(function () {
+    $(".auth-form").css("display", "none");
+});
+
+$(".auth-button").click(function () {
+    $(".auth-form").css("display", "block");
+});
+
+$(".auth-button").click(function () {
+    $(".registration").css("display", "none");
 });
 
 
