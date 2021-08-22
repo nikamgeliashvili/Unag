@@ -98,6 +98,27 @@ a:hover {
     background: #F8C934;
     color: white; }
 
+.bg-container {
+  background-color: #F2F2F2; }
+
+.pagination {
+  justify-content: center;
+  padding: 20px; }
+  .pagination .active {
+    border-bottom: 2px solid #2980B9;
+    color: #2980B9; }
+  .pagination a {
+    color: #2C3E50;
+    background: white;
+    font-size: 16px;
+    padding: 8px 16px 5px;
+    font-family: 'BPG WEB 001';
+    transition: .3s;
+    border-bottom: 2px solid white; }
+    .pagination a:hover, .pagination a .active {
+      border-bottom: 2px solid #2980B9;
+      color: #2980B9; }
+
 .t-button {
   border-radius: 10px;
   color: white;
@@ -333,6 +354,26 @@ header {
   padding: 10px 0px;
   color: #2C3E50; }
 
+.banner-text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  z-index: 99;
+  font-family: 'Conv_bpg-web-001-caps-webfont'; }
+  .banner-text .banner-title {
+    font-size: 42px;
+    color: white; }
+  .banner-text .banner-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-family: 'BPG WEB 001'; }
+    .banner-text .banner-buttons a {
+      margin: 5px;
+      display: flex;
+      align-items: center; }
+
 .banner {
   background: #57A3C2;
   padding: 40px 30px 50px;
@@ -425,7 +466,7 @@ footer {
   font-style: normal; }
 .main-container .banner-text {
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: 100%;
   text-align: center;
   z-index: 99;
@@ -805,5 +846,132 @@ footer {
   .map-container .gmap_iframe {
     width: 100%;
     height: 60vh; }
+
+.course-banner {
+  width: 100%;
+  height: 80vh;
+  overflow: hidden; }
+  .course-banner .banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .course-banner .slider-bg {
+    height: 80vh;
+    min-height: unset; }
+  .course-banner .search-container {
+    width: 50%;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    padding: 7px; }
+    .course-banner .search-container .search-form {
+      font-family: 'Conv_bpg_arial_2009';
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative; }
+      .course-banner .search-container .search-form .filter {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 10px 20px; }
+        .course-banner .search-container .search-form .filter span {
+          padding-left: 5px; }
+      .course-banner .search-container .search-form .search-input {
+        width: 70%;
+        display: flex;
+        justify-content: space-between; }
+        .course-banner .search-container .search-form .search-input input {
+          color: #2C3E50;
+          padding: 5px 15px;
+          border-left: 1px solid #E2E2E2; }
+        .course-banner .search-container .search-form .search-input button {
+          color: white;
+          background: #57A3C2;
+          outline: none;
+          border-radius: 7px;
+          padding: 10px 15px;
+          cursor: pointer; }
+      .course-banner .search-container .search-form .filter-box {
+        position: absolute;
+        top: 60px;
+        background: white;
+        border-radius: 7px;
+        left: -7px;
+        padding: 20px;
+        text-align: left;
+        display: none; }
+        .course-banner .search-container .search-form .filter-box .filter-top {
+          border-bottom: 1px solid #E2E2E2; }
+        .course-banner .search-container .search-form .filter-box .filter-bottom {
+          margin-top: 10px; }
+        .course-banner .search-container .search-form .filter-box:after {
+          content: "";
+          width: 15px;
+          height: 15px;
+          background: white;
+          z-index: 222222;
+          font-size: 10px;
+          position: absolute;
+          top: -6px;
+          left: 48%;
+          transform: rotate(45deg); }
+
+.course-container {
+  padding-bottom: 50px;
+  width: 80%;
+  margin: 0 auto; }
+  .course-container .category-list {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0; }
+    .course-container .category-list .selected-cat {
+      border: 1px solid #D5D5D5;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+      font-family: 'Conv_bpg_arial_2009';
+      color: #2C3E50; }
+      .course-container .category-list .selected-cat span {
+        padding: 6px 8px;
+        border-right: 1px solid #D5D5D5; }
+      .course-container .category-list .selected-cat .close {
+        width: 15px;
+        height: 15px;
+        margin: 0 10px;
+        cursor: pointer; }
+  .course-container .course-box {
+    width: 49%;
+    margin: 15px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    background: white; }
+    .course-container .course-box .course-img {
+      width: 100%;
+      max-height: 300px;
+      height: 100%; }
+    .course-container .course-box .course-title {
+      color: #2C3E50;
+      font-size: 18px;
+      font-family: 'Conv_bpg-web-001-caps-webfont';
+      padding: 15px 20px 5px;
+      line-height: 25px; }
+      .course-container .course-box .course-title a {
+        color: #2C3E50; }
+    .course-container .course-box .course-text {
+      display: flex;
+      flex-direction: column;
+      font-family: 'BPG WEB 001'; }
+      .course-container .course-box .course-text .cert-link {
+        color: #9070B8;
+        padding: 5px 20px; }
+        .course-container .course-box .course-text .cert-link a {
+          color: #9070B8; }
+      .course-container .course-box .course-text .span-bottom {
+        color: #2C3E50;
+        padding: 5px 20px 40px; }
+  .course-container .d-flex {
+    flex-wrap: wrap; }
 
 /*# sourceMappingURL=main.css.map */

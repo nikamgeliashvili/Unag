@@ -129,6 +129,20 @@ $(".dropdown-box").on("click", function () {
     $(this).toggleClass('dropdown-active')
   });
 
+  $(".filter").on("click", function () {
+    $('.filter-box').slideToggle()
+  });
+
+  $(".close").click(function () {
+    $(this).parent().css('display','none');
+    
+});
+
+
+
+
+  
+
 
 
 

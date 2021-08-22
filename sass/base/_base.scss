@@ -118,6 +118,38 @@ a:hover {
     }
 }
 
+
+.bg-container{
+    background-color: #F2F2F2;
+}
+
+.pagination{
+    justify-content: center;
+    padding: 20px;
+
+    .active{
+        border-bottom: 2px solid #2980B9;
+        color: #2980B9;
+    }
+
+    a{
+        color: #2C3E50;
+        background: white;
+        font-size: 16px;
+        padding: 8px 16px 5px;
+        font-family: 'BPG WEB 001';
+        transition: .3s;
+        border-bottom: 2px solid white;
+
+
+        &:hover, .active{
+            border-bottom: 2px solid #2980B9;
+            color: #2980B9;
+
+        }
+    }
+}
+
 .t-button{
     border-radius:10px;
     color: white;
@@ -464,6 +496,33 @@ header{
     padding: 10px 0px;
     color: #2C3E50;
 
+}
+
+.banner-text{   
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    z-index: 99;
+    font-family: 'Conv_bpg-web-001-caps-webfont';
+
+    .banner-title{
+        font-size: 42px;
+        color: white;
+    }
+
+    .banner-buttons{
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        font-family: 'BPG WEB 001';
+
+        a{
+            margin: 5px;
+            display: flex;
+            align-items: center;
+        }
+    }
 }
 
 .banner{
