@@ -114,6 +114,31 @@ $('.donor-slider').slick({
 });
 
 
+
+
+$('.course-page-slider').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    dots:false,
+    arrows:true,
+
+    responsive:[
+        
+        {
+            breakpoint: 992,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            }
+        },
+    
+    
+        ]
+
+});
+
+
 $('.dropdown-box').on('click',function(){
      $(this).next($('.dropdown-text')).slideToggle()
 })
@@ -137,6 +162,15 @@ $(".dropdown-box").on("click", function () {
     $(this).parent().css('display','none');
     
 });
+
+$(".see-more span").on("click", function () {
+    $('.tab-pane p').toggleClass('hide')
+  });
+
+  $(".see-more span").on("click", function () {
+    $('.see-more').css('display','none')
+  });
+
 
 
 

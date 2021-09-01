@@ -103,7 +103,7 @@
 }
 
 .course-container{
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 
 
     width:80%;
@@ -198,6 +198,324 @@
 
     .d-flex{
         flex-wrap: wrap;
+    }
+
+
+    .course-page-top{
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        
+        .title{
+            font-family: 'Conv_bpg-web-001-caps-webfont';
+            font-size: 24px;
+            color: #2C3E50;
+        }
+
+        .cert-link{
+            padding: 16px;
+
+            a{
+                color: #9070B8;
+                font-family: 'BPG WEB 001';
+            }
+        }
+
+        .button{
+            font-family: 'BPG WEB 001';
+            display: flex;
+            align-items: center;
+           
+            a{
+                color:white;
+                background: #57A3C2;
+                padding: 30px 15px;
+                border-radius: 5px;
+                transition: .3s;
+
+                &:hover {
+                    background: #F8C934;
+                    color: white;
+                }
+            }
+
+        }
+
+       
+    }
+    
+    .nav-tabs{
+        width: 85%;
+        margin: 20px auto;
+        border-bottom: 1px solid #E2E2E2;
+
+        .nav-item{
+            .nav-link{
+                font-size: 22px;
+                color:#2C3E50;
+                font-family: 'Conv_bpg-web-001-caps-webfont';
+                background: transparent;
+                border: unset;
+                opacity: .7;
+              
+            }
+    
+            .active{
+                border-bottom: 4px solid #2C3E50;
+                opacity: 1;
+            }
+
+        } 
+
+    }
+
+    .tab-content{
+        width: 85%;
+        margin: 0 auto;
+        color: #2C3E50;
+        font-family: 'Conv_bpg_arial_2009';
+
+        .tab-pane{
+
+            padding: 0 60px;
+
+            p {
+                overflow: hidden;
+                position: relative;
+                transition: max-height 1s linear;
+    
+            }
+            
+        }
+
+        .tab-right{
+
+           .tab-section{
+            padding: 30px 60px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0px 0px 6px 5px #00000009;
+            margin-bottom: 30px;
+
+           }
+         
+
+            .title{
+                color: #2C3E50;
+                font-size: 18px;
+	            font-family: 'Conv_bpg-web-001-caps-webfont';
+                transition: .3s;
+
+            }
+
+            .tab-section:hover{
+                .title{
+                    color: #3498DB;
+                    
+                }
+            }
+
+            .tab-text{
+                margin: 10px 0;
+            }
+
+            .components{
+                a{
+                    display: flex;
+                    align-items: center;
+                    padding: 10px 0;
+                    color: #2C3E50;
+
+                    img{
+                        padding-right: 10px;
+
+                    }
+                }
+            }
+        }
+
+        .hide{
+            max-height: 1490px !important;
+            transition: max-height 1s linear;
+        }
+
+        
+    }
+
+    .see-more {
+        
+        font-size:16px;
+        font-family: 'Conv_bpg-web-001-caps-webfont';
+        margin: 15px auto;
+        text-align: center;
+
+
+        span{
+            cursor: pointer;
+        }
+        
+    
+
+    }
+
+    .tag-list{
+        font-size: 14px;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: unset;
+        margin: 30px auto;
+
+        .selected-cat{
+            margin: 0 10px 5px 0;
+
+            span{
+                padding: 4px 6px;
+                border-right: unset;
+            }
+        }
+    }
+       
+    
+    
+}
+
+
+
+.course-page-b{
+    background: #F2EFDF;
+
+    .common-title{
+        color:#2C3E50;
+        font-size: 32px;
+        font-family: 'Conv_bpg-web-001-caps-webfont';
+        padding: 40px 0 20px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+    .course-page-slider {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 50px;
+
+        .course-box{
+            margin: 5px;
+            overflow: hidden;
+            border-radius: 7px;
+            background-color: white;
+
+            img{
+                height: 120px;
+            }
+        }
+
+
+
+
+        .slick-prev{
+            left: 10px;
+            z-index: 111;
+            background: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            padding: 10px 3px 10px 0;
+            top:-40px;
+            left:unset;
+            right: 60px;
+
+            &:before{
+                content: url(../images/arr-prev.png);
+
+            }
+        }
+
+        .slick-next{
+            right: 10px;
+            z-index: 111;
+            background: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            padding: 10px 0 10px 4px;
+            top: -40px;
+            right: 0;
+
+            &:before {
+                content: url(../images/arr-next.png);
+            }
+
+
+        }
+
+        .course-title{
+            padding: 5px 10px;
+
+            a{
+                color: #2C3E50;
+                font-size: 15px;
+	            font-family: 'Conv_bpg-web-001-caps-webfont';
+
+            }
+        }
+
+        .cert-link{
+            background: #F4F1F8;
+            padding: 5px 10px;
+            width: 95%;
+            margin: 30px auto;
+            
+
+            a{
+                display: flex;
+                align-items: center;
+                color: #9070B8;
+	            font-family: 'Conv_bpg_arial_2009';
+
+
+                img{
+                    margin-right: 5px;
+                    height: unset;
+                   
+                }
+            }
+        }
+
+        .view-course{
+            border-top: 1px solid #F2F2F2;
+            padding: 20px 10px;
+
+            a{
+                color: #2C3E50;
+	            font-family: 'Conv_bpg-web-001-caps-webfont';
+                display: flex;
+                justify-content: center;
+
+                img{
+                    width: 30px;
+                    height: 20px;
+                    margin-left: 10px;
+                    opacity: 0;
+                    transition: .3s;
+                }
+
+                &:hover{
+
+                    img{
+                        opacity: 1;
+                    }
+                }
+
+            }
+
+            &:hover{
+
+                img{
+                    opacity: 1;
+                }
+            }
+        }
     }
 }
 

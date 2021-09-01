@@ -670,7 +670,9 @@ footer {
     align-items: center;
     margin: 0px auto 35px; }
     .main-container .review-slider .review-slide p {
-      font-family: 'Conv_bpg_arial_2009'; }
+      font-family: 'Conv_bpg_arial_2009';
+      max-height: 145px;
+      overflow: hidden; }
     .main-container .review-slider .review-slide span {
       font-family: 'Conv_bpg-web-001-caps-webfont'; }
     .main-container .review-slider .review-slide .r-name {
@@ -918,7 +920,7 @@ footer {
           transform: rotate(45deg); }
 
 .course-container {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   width: 80%;
   margin: 0 auto; }
   .course-container .category-list {
@@ -973,5 +975,227 @@ footer {
         padding: 5px 20px 40px; }
   .course-container .d-flex {
     flex-wrap: wrap; }
+  .course-container .course-page-top {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between; }
+    .course-container .course-page-top .title {
+      font-family: 'Conv_bpg-web-001-caps-webfont';
+      font-size: 24px;
+      color: #2C3E50; }
+    .course-container .course-page-top .cert-link {
+      padding: 16px; }
+      .course-container .course-page-top .cert-link a {
+        color: #9070B8;
+        font-family: 'BPG WEB 001'; }
+    .course-container .course-page-top .button {
+      font-family: 'BPG WEB 001';
+      display: flex;
+      align-items: center; }
+      .course-container .course-page-top .button a {
+        color: white;
+        background: #57A3C2;
+        padding: 30px 15px;
+        border-radius: 5px;
+        transition: .3s; }
+        .course-container .course-page-top .button a:hover {
+          background: #F8C934;
+          color: white; }
+  .course-container .nav-tabs {
+    width: 85%;
+    margin: 20px auto;
+    border-bottom: 1px solid #E2E2E2; }
+    .course-container .nav-tabs .nav-item .nav-link {
+      font-size: 22px;
+      color: #2C3E50;
+      font-family: 'Conv_bpg-web-001-caps-webfont';
+      background: transparent;
+      border: unset;
+      opacity: .7; }
+    .course-container .nav-tabs .nav-item .active {
+      border-bottom: 4px solid #2C3E50;
+      opacity: 1; }
+  .course-container .tab-content {
+    width: 85%;
+    margin: 0 auto;
+    color: #2C3E50;
+    font-family: 'Conv_bpg_arial_2009'; }
+    .course-container .tab-content .tab-pane {
+      padding: 0 60px; }
+      .course-container .tab-content .tab-pane p {
+        overflow: hidden;
+        position: relative;
+        transition: max-height 1s linear; }
+    .course-container .tab-content .tab-right .tab-section {
+      padding: 30px 60px;
+      background: white;
+      border-radius: 5px;
+      box-shadow: 0px 0px 6px 5px #00000009;
+      margin-bottom: 30px; }
+    .course-container .tab-content .tab-right .title {
+      color: #2C3E50;
+      font-size: 18px;
+      font-family: 'Conv_bpg-web-001-caps-webfont';
+      transition: .3s; }
+    .course-container .tab-content .tab-right .tab-section:hover .title {
+      color: #3498DB; }
+    .course-container .tab-content .tab-right .tab-text {
+      margin: 10px 0; }
+    .course-container .tab-content .tab-right .components a {
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+      color: #2C3E50; }
+      .course-container .tab-content .tab-right .components a img {
+        padding-right: 10px; }
+    .course-container .tab-content .hide {
+      max-height: 1490px !important;
+      transition: max-height 1s linear; }
+  .course-container .see-more {
+    font-size: 16px;
+    font-family: 'Conv_bpg-web-001-caps-webfont';
+    margin: 15px auto;
+    text-align: center; }
+    .course-container .see-more span {
+      cursor: pointer; }
+  .course-container .tag-list {
+    font-size: 14px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: unset;
+    margin: 30px auto; }
+    .course-container .tag-list .selected-cat {
+      margin: 0 10px 5px 0; }
+      .course-container .tag-list .selected-cat span {
+        padding: 4px 6px;
+        border-right: unset; }
+
+.course-page-b {
+  background: #F2EFDF; }
+  .course-page-b .common-title {
+    color: #2C3E50;
+    font-size: 32px;
+    font-family: 'Conv_bpg-web-001-caps-webfont';
+    padding: 40px 0 20px;
+    width: 80%;
+    margin: 0 auto; }
+  .course-page-b .course-page-slider {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 50px; }
+    .course-page-b .course-page-slider .course-box {
+      margin: 5px;
+      overflow: hidden;
+      border-radius: 7px;
+      background-color: white; }
+      .course-page-b .course-page-slider .course-box img {
+        height: 120px; }
+    .course-page-b .course-page-slider .slick-prev {
+      left: 10px;
+      z-index: 111;
+      background: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      padding: 10px 3px 10px 0;
+      top: -40px;
+      left: unset;
+      right: 60px; }
+      .course-page-b .course-page-slider .slick-prev:before {
+        content: url(../images/arr-prev.png); }
+    .course-page-b .course-page-slider .slick-next {
+      right: 10px;
+      z-index: 111;
+      background: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      padding: 10px 0 10px 4px;
+      top: -40px;
+      right: 0; }
+      .course-page-b .course-page-slider .slick-next:before {
+        content: url(../images/arr-next.png); }
+    .course-page-b .course-page-slider .course-title {
+      padding: 5px 10px; }
+      .course-page-b .course-page-slider .course-title a {
+        color: #2C3E50;
+        font-size: 15px;
+        font-family: 'Conv_bpg-web-001-caps-webfont'; }
+    .course-page-b .course-page-slider .cert-link {
+      background: #F4F1F8;
+      padding: 5px 10px;
+      width: 95%;
+      margin: 30px auto; }
+      .course-page-b .course-page-slider .cert-link a {
+        display: flex;
+        align-items: center;
+        color: #9070B8;
+        font-family: 'Conv_bpg_arial_2009'; }
+        .course-page-b .course-page-slider .cert-link a img {
+          margin-right: 5px;
+          height: unset; }
+    .course-page-b .course-page-slider .view-course {
+      border-top: 1px solid #F2F2F2;
+      padding: 20px 10px; }
+      .course-page-b .course-page-slider .view-course a {
+        color: #2C3E50;
+        font-family: 'Conv_bpg-web-001-caps-webfont';
+        display: flex;
+        justify-content: center; }
+        .course-page-b .course-page-slider .view-course a img {
+          width: 30px;
+          height: 20px;
+          margin-left: 10px;
+          opacity: 0;
+          transition: .3s; }
+        .course-page-b .course-page-slider .view-course a:hover img {
+          opacity: 1; }
+      .course-page-b .course-page-slider .view-course:hover img {
+        opacity: 1; }
+
+.certificate-container .title {
+  color: #2C3E50;
+  font-size: 32px;
+  font-family: 'Conv_bpg-web-001-caps-webfont';
+  text-align: center;
+  padding: 50px 20px; }
+.certificate-container .cert-box {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 30px; }
+  .certificate-container .cert-box .cert-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 40px 20px; }
+    .certificate-container .cert-box .cert-info .cert-title {
+      color: #2C3E50;
+      font-size: 22px;
+      font-family: 'Conv_bpg-web-001-caps-webfont'; }
+    .certificate-container .cert-box .cert-info span {
+      color: #2C3E50;
+      font-family: 'BPG WEB 001';
+      max-height: 98px;
+      overflow: hidden; }
+    .certificate-container .cert-box .cert-info .share-box {
+      display: flex;
+      align-items: center; }
+      .certificate-container .cert-box .cert-info .share-box a {
+        background: white;
+        padding: 11px;
+        display: flex;
+        align-items: center;
+        border-radius: 5px; }
+      .certificate-container .cert-box .cert-info .share-box .course-button {
+        color: #57A3C2;
+        font-family: 'BPG WEB 001';
+        border-radius: 5px;
+        border: 1px solid #57A3C2;
+        padding: 10px 15px;
+        transition: .3s;
+        margin-right: 20px; }
+        .certificate-container .cert-box .cert-info .share-box .course-button:hover {
+          color: white;
+          background: #57A3C2; }
 
 /*# sourceMappingURL=main.css.map */

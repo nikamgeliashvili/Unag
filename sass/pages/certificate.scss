@@ -1,0 +1,68 @@
+.certificate-container{
+
+    .title{
+        color: #2C3E50;
+        font-size: 32px;
+    	font-family: 'Conv_bpg-web-001-caps-webfont';
+        text-align: center;
+        padding: 50px 20px;
+
+    }
+
+    .cert-box{
+        width: 80%;
+        margin: 0 auto ;
+        padding-bottom: 30px;
+
+
+        .cert-info{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 40px 20px;
+
+            .cert-title{
+                color:#2C3E50;
+                font-size: 22px;
+    	        font-family: 'Conv_bpg-web-001-caps-webfont';
+
+            }
+
+            span{
+                color:#2C3E50;
+                font-family: 'BPG WEB 001';
+                max-height: 98px;
+                overflow: hidden;
+            }
+
+            .share-box{
+                display: flex;
+                align-items: center;
+
+                a{
+                    background: white;
+                    padding: 11px;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 5px;
+                }
+
+                .course-button{
+                    color: #57A3C2;
+                    font-family: 'BPG WEB 001';
+                    border-radius: 5px;
+                    border: 1px solid #57A3C2;
+                    padding: 10px 15px;
+                    transition: .3s;
+                    margin-right: 20px;
+
+                    &:hover{
+                        color: white;
+                        background: #57A3C2;
+                    }
+                }
+            }
+        }
+
+    }
+}
