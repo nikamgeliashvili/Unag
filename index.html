@@ -55,11 +55,11 @@
 
 		<div class="header-right">
 			<ul>
-				<li class="reg-button">
+				<li class="reg-button" id="registration-form">
 					<a href="#">რეგისტრაცია</a>
 				</li>
 
-				<li class=" auth-button" >
+				<li class=" auth-button" id="auth-form" >
 					<a href="#" class="d-button"> 	<img src="images/auth.svg" alt=""> <span>ავტორიზაცია</span></a>
 				</li>
 			</ul>
@@ -144,7 +144,7 @@
 				</div>
 
 				<button class="reg-button">
-						ავტორიზაცია
+						რეგოსტრაცია
 				</button>
 
 
@@ -158,6 +158,12 @@
 			<h3 class="title">
 				ავტორიზაცია
 			</h3>
+
+			<div class="d-none">
+				<span>
+					კურსის სანახავად საჭიროა გაიაროთ ავტორიზაცია
+				</span>
+			</div>
 
 
 			
@@ -180,8 +186,48 @@
 				</div>
 
 
+				<div class="pas-restore">
+					<a href="#">პაროლის აღდგენა</a>
+				</div>
+
+
 				<button class="reg-button">
 						ავტორიზაცია
+				</button>
+
+				<div class="center">
+					<span>ან</span>
+				</div>
+
+				<button class="reg-button transparent">
+					რეგისტრაცია
+				</button>
+
+
+					
+				
+			</form>
+		</section>
+
+
+		<section class=" common-form password-restore">
+			<h3 class="title">
+				პაროლის აღდგენა
+			</h3>
+
+			<div class="close">
+				<img src="images/close.svg " alt="">
+			</div>
+
+			<form action="">
+			
+				<div class="field">
+					<input type="text" required autocomplete="off" id="auth-email" value="">
+					<label for="auth-email" title="ელფოსტა" data-title="ელფოსტა"></label>
+				</div>
+
+				<button class="reg-button">
+						პაროლის აღდგენა
 				</button>
 
 				<div class="center">
@@ -248,30 +294,36 @@
 
 
 	 <section class="category-container">
+		
+
 		<div class="category">
 			<div>
 				<a href="#">
-					<img src="images/category.png" class="cat-img" alt="">
+					<img src="images/cat2.png" class="cat-img" alt="">
 				</a>
 			</div>
-			<span>კატეგორია</span>
+
+			<div class="category-title">
+				<span class="bold">1</span>
+				<span>კატეგორია</span>
+			</div>
 
 
-			<div class="category-info">
-				<div>
-					<span class="h-title">კატეგორია</span>
+		<div class="category-info">
+				<div class="h-title">
+					<span >კატეგორია</span>
 				</div>
 	
-				<div>
-					<span class="h-text">
-						საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე მისი ტექსტი არამარტო
-					</span>
-				</div>
+				
 	
-				<div>
-					<span class="h-courses">
-						17 კურსი
-					</span>
+				<div  class="h-courses">
+					<img src="images/students-cap.svg " alt="">
+					<span>17 კურსი</span>
+				</div>
+
+				<div  class="h-courses">
+					<img src="images/video-camera.svg " alt="">
+					<span>17 კურსი</span>
 				</div>
 	
 				<div class="m-button">
@@ -280,42 +332,7 @@
 						<img src="images/left-arrow.png" alt="">
 					</a>
 				</div>
-			</div>
-		</div>
-
-		<div class="category">
-			<div>
-				<a href="#">
-					<img src="images/category.png" class="cat-img" alt="">
-				</a>
-			</div>
-			<span>კატეგორია</span>
-
-
-			<div class="category-info">
-				<div>
-					<span class="h-title">კატეგორია</span>
-				</div>
-	
-				<div>
-					<span class="h-text">
-						საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე მისი ტექსტი არამარტო
-					</span>
-				</div>
-	
-				<div>
-					<span class="h-courses">
-						17 კურსი
-					</span>
-				</div>
-	
-				<div class="m-button">
-					<a href="#">
-						<span class="h-more">ვრცლად</span>
-						<img src="images/left-arrow.png" alt="">
-					</a>
-				</div>
-			</div>
+			</div> 
 		</div>
 
 		<div class="category">
@@ -324,24 +341,28 @@
 					<img src="images/cat2.png" class="cat-img" alt="">
 				</a>
 			</div>
-			<span>კატეგორია</span>
+
+			<div class="category-title">
+				<span class="bold">2</span>
+				<span>კატეგორია</span>
+			</div>
 
 
-			<div class="category-info">
-				<div>
-					<span class="h-title">კატეგორია</span>
+		<div class="category-info">
+				<div class="h-title">
+					<span >კატეგორია</span>
 				</div>
 	
-				<div>
-					<span class="h-text">
-						საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე მისი ტექსტი არამარტო
-					</span>
-				</div>
+				
 	
-				<div>
-					<span class="h-courses">
-						17 კურსი
-					</span>
+				<div  class="h-courses">
+					<img src="images/students-cap.svg " alt="">
+					<span>17 კურსი</span>
+				</div>
+
+				<div  class="h-courses">
+					<img src="images/video-camera.svg " alt="">
+					<span>17 კურსი</span>
 				</div>
 	
 				<div class="m-button">
@@ -350,7 +371,7 @@
 						<img src="images/left-arrow.png" alt="">
 					</a>
 				</div>
-			</div>
+			</div> 
 		</div>
 
 		<div class="category">
@@ -359,24 +380,28 @@
 					<img src="images/cat2.png" class="cat-img" alt="">
 				</a>
 			</div>
-			<span>კატეგორია</span>
+
+			<div class="category-title">
+				<span class="bold">3</span>
+				<span>კატეგორია</span>
+			</div>
 
 
-			<div class="category-info">
-				<div>
-					<span class="h-title">კატეგორია</span>
+		<div class="category-info">
+				<div class="h-title">
+					<span >კატეგორია</span>
 				</div>
 	
-				<div>
-					<span class="h-text">
-						საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე მისი ტექსტი არამარტო
-					</span>
-				</div>
+				
 	
-				<div>
-					<span class="h-courses">
-						17 კურსი
-					</span>
+				<div  class="h-courses">
+					<img src="images/students-cap.svg " alt="">
+					<span>17 კურსი</span>
+				</div>
+
+				<div  class="h-courses">
+					<img src="images/video-camera.svg " alt="">
+					<span>17 კურსი</span>
 				</div>
 	
 				<div class="m-button">
@@ -385,33 +410,37 @@
 						<img src="images/left-arrow.png" alt="">
 					</a>
 				</div>
-			</div>
+			</div> 
 		</div>
 
 		<div class="category">
 			<div>
 				<a href="#">
-					<img src="images/category.png" class="cat-img" alt="">
+					<img src="images/cat2.png" class="cat-img" alt="">
 				</a>
 			</div>
-			<span>კატეგორია</span>
+
+			<div class="category-title">
+				<span class="bold">4</span>
+				<span>კატეგორია</span>
+			</div>
 
 
-			<div class="category-info">
-				<div>
-					<span class="h-title">კატეგორია</span>
+		<div class="category-info">
+				<div class="h-title">
+					<span >კატეგორია</span>
 				</div>
 	
-				<div>
-					<span class="h-text">
-						საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე მისი ტექსტი არამარტო
-					</span>
-				</div>
+				
 	
-				<div>
-					<span class="h-courses">
-						17 კურსი
-					</span>
+				<div  class="h-courses">
+					<img src="images/students-cap.svg " alt="">
+					<span>17 კურსი</span>
+				</div>
+
+				<div  class="h-courses">
+					<img src="images/video-camera.svg " alt="">
+					<span>17 კურსი</span>
 				</div>
 	
 				<div class="m-button">
@@ -420,33 +449,37 @@
 						<img src="images/left-arrow.png" alt="">
 					</a>
 				</div>
-			</div>
+			</div> 
 		</div>
 
 		<div class="category">
 			<div>
 				<a href="#">
-					<img src="images/category.png" class="cat-img" alt="">
+					<img src="images/cat2.png" class="cat-img" alt="">
 				</a>
 			</div>
-			<span>კატეგორია</span>
+
+			<div class="category-title">
+				<span class="bold">5</span>
+				<span>კატეგორია</span>
+			</div>
 
 
-			<div class="category-info">
-				<div>
-					<span class="h-title">კატეგორია</span>
+		<div class="category-info">
+				<div class="h-title">
+					<span >კატეგორია</span>
 				</div>
 	
-				<div>
-					<span class="h-text">
-						საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე მისი ტექსტი არამარტო
-					</span>
-				</div>
+				
 	
-				<div>
-					<span class="h-courses">
-						17 კურსი
-					</span>
+				<div  class="h-courses">
+					<img src="images/students-cap.svg " alt="">
+					<span>17 კურსი</span>
+				</div>
+
+				<div  class="h-courses">
+					<img src="images/video-camera.svg " alt="">
+					<span>17 კურსი</span>
 				</div>
 	
 				<div class="m-button">
@@ -455,33 +488,37 @@
 						<img src="images/left-arrow.png" alt="">
 					</a>
 				</div>
-			</div>
+			</div> 
 		</div>
 
 		<div class="category">
 			<div>
 				<a href="#">
-					<img src="images/category.png" class="cat-img" alt="">
+					<img src="images/cat2.png" class="cat-img" alt="">
 				</a>
 			</div>
-			<span>კატეგორია</span>
+
+			<div class="category-title">
+				<span class="bold">6</span>
+				<span>კატეგორია</span>
+			</div>
 
 
-			<div class="category-info">
-				<div>
-					<span class="h-title">კატეგორია</span>
+		<div class="category-info">
+				<div class="h-title">
+					<span >კატეგორია</span>
 				</div>
 	
-				<div>
-					<span class="h-text">
-						საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე მისი ტექსტი არამარტო
-					</span>
-				</div>
+				
 	
-				<div>
-					<span class="h-courses">
-						17 კურსი
-					</span>
+				<div  class="h-courses">
+					<img src="images/students-cap.svg " alt="">
+					<span>17 კურსი</span>
+				</div>
+
+				<div  class="h-courses">
+					<img src="images/video-camera.svg " alt="">
+					<span>17 კურსი</span>
 				</div>
 	
 				<div class="m-button">
@@ -490,33 +527,37 @@
 						<img src="images/left-arrow.png" alt="">
 					</a>
 				</div>
-			</div>
+			</div> 
 		</div>
 
 		<div class="category">
 			<div>
 				<a href="#">
-					<img src="images/category.png" class="cat-img" alt="">
+					<img src="images/cat2.png" class="cat-img" alt="">
 				</a>
 			</div>
-			<span>კატეგორია</span>
+
+			<div class="category-title">
+				<span class="bold">7</span>
+				<span>კატეგორია</span>
+			</div>
 
 
-			<div class="category-info">
-				<div>
-					<span class="h-title">კატეგორია</span>
+		<div class="category-info">
+				<div class="h-title">
+					<span >კატეგორია</span>
 				</div>
 	
-				<div>
-					<span class="h-text">
-						საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე მისი ტექსტი არამარტო
-					</span>
-				</div>
+				
 	
-				<div>
-					<span class="h-courses">
-						17 კურსი
-					</span>
+				<div  class="h-courses">
+					<img src="images/students-cap.svg " alt="">
+					<span>17 კურსი</span>
+				</div>
+
+				<div  class="h-courses">
+					<img src="images/video-camera.svg " alt="">
+					<span>17 კურსი</span>
 				</div>
 	
 				<div class="m-button">
@@ -525,7 +566,46 @@
 						<img src="images/left-arrow.png" alt="">
 					</a>
 				</div>
+			</div> 
+		</div>
+
+		<div class="category">
+			<div>
+				<a href="#">
+					<img src="images/cat2.png" class="cat-img" alt="">
+				</a>
 			</div>
+
+			<div class="category-title">
+				<span class="bold">8</span>
+				<span>კატეგორია</span>
+			</div>
+
+
+		<div class="category-info">
+				<div class="h-title">
+					<span >კატეგორია</span>
+				</div>
+	
+				
+	
+				<div  class="h-courses">
+					<img src="images/students-cap.svg " alt="">
+					<span>17 კურსი</span>
+				</div>
+
+				<div  class="h-courses">
+					<img src="images/video-camera.svg " alt="">
+					<span>17 კურსი</span>
+				</div>
+	
+				<div class="m-button">
+					<a href="#">
+						<span class="h-more">ვრცლად</span>
+						<img src="images/left-arrow.png" alt="">
+					</a>
+				</div>
+			</div> 
 		</div>
 
 		

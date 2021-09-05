@@ -19,7 +19,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            padding: 40px 20px;
+            padding: 30px 20px;
 
             .cert-title{
                 color:#2C3E50;
@@ -35,34 +35,104 @@
                 overflow: hidden;
             }
 
-            .share-box{
-                display: flex;
-                align-items: center;
-
-                a{
-                    background: white;
-                    padding: 11px;
-                    display: flex;
-                    align-items: center;
-                    border-radius: 5px;
-                }
-
-                .course-button{
-                    color: #57A3C2;
-                    font-family: 'BPG WEB 001';
-                    border-radius: 5px;
-                    border: 1px solid #57A3C2;
-                    padding: 10px 15px;
-                    transition: .3s;
-                    margin-right: 20px;
-
-                    &:hover{
-                        color: white;
-                        background: #57A3C2;
-                    }
-                }
-            }
+          
         }
 
     }
+
+   
+}
+
+.cert-page-container{
+    padding-bottom: 50px;
+
+    .cert-page-box{
+        border: 1px solid #707070;
+        border-radius: 7px;
+        background-color: white;
+        width: 70%;
+        margin: 20px auto;
+
+        .bottom{
+            justify-content: space-between;
+            font-family: 'BPG WEB 001';
+            margin: 80px 0 30px;
+
+            .cert-title{
+                text-align: center;
+                padding-bottom: 20px;
+            }
+      
+            .b-name{
+                color: #2C3E50;
+                border-bottom: 1px solid #2C3E50;
+                padding-bottom: 7px;
+                width: 50%;
+                margin-left: 40px;
+            }
+
+            .b-date{
+                color: #2C3E50;
+                border-bottom: 1px solid #2C3E50;
+                padding-bottom: 7px;
+                padding: 7px 15px;
+                margin-right: 40px;
+                
+            }
+        }
+
+        .big-title{
+            font-size: 50px;
+            padding: 50px 10px 0;
+        }
+
+        .cert-info{
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.share-box{
+    display: flex;
+    align-items: center;
+
+    a{
+        background: white;
+        padding: 11px;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    .course-button{
+        color: #57A3C2;
+        font-family: 'BPG WEB 001';
+        border-radius: 5px;
+        border: 1px solid #57A3C2;
+        padding: 10px 15px;
+        transition: .3s;
+        margin-right: 20px;
+        font-family: 'Conv_bpg-web-001-caps-webfont';
+
+        svg{
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        &:hover{
+            color: white;
+            background: #57A3C2;
+
+            #Path_412, #Path_413{
+                fill: white;
+                transition: .3s;
+            }
+        }
+    }
+}
+
+.cert-share-box{
+    justify-content: center;
+    padding: 40px 0 20px;
 }

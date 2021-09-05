@@ -114,8 +114,6 @@ $('.donor-slider').slick({
 });
 
 
-
-
 $('.course-page-slider').slick({
     infinite: true,
     slidesToShow: 4,
@@ -196,23 +194,32 @@ $("#imageUpload").change(function() {
 });
 
 
+
+
+
 $(".close").click(function () {
     $(".registration, .auth-form").css("display", "none");
 });
 
-$(".reg-button").click(function () {
+$("#registration-form").click(function () {
     $(".registration").css("display", "block");
 });
 
-$(".reg-button").click(function () {
+$("#registration-form").click(function () {
     $(".auth-form").css("display", "none");
 });
 
-$(".auth-button").click(function () {
+$(".pas-restore").click(function () {
+    $(".password-restore").css("display", "block");
+    $(".auth-form").css("display", "none");
+});
+
+
+$("#auth-form").click(function () {
     $(".auth-form").css("display", "block");
 });
 
-$(".auth-button").click(function () {
+$("#auth-form").click(function () {
     $(".registration").css("display", "none");
 });
 

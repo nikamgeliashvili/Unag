@@ -18,7 +18,6 @@
             display: flex;
             justify-content: center;
             margin-top: 15px;
-            font-family: 'BPG WEB 001';
 
             a{
                 margin: 5px;
@@ -48,7 +47,6 @@
 
     .category-container{
         width: 100%;
-        padding: 60px 10%;
         background: #F2F2F2;
         display: flex;
         justify-content: space-between;
@@ -58,9 +56,8 @@
 
         .category{
             position: relative;
-            width: calc(25% - 9px);
+            width: 25%;
             transition: 0.5s;
-            margin-top: 10px;
             font-family: 'Conv_bpg-web-001-caps-webfont';
 
             
@@ -68,16 +65,31 @@
 
                 .cat-img{
                     width: 100%;
+                    height: 460px;
+                    object-fit: cover;
+                    filter: brightness(70%);
+                    
                 }
             }
 
-            span{
+            .category-title{
                 position: absolute;
-                bottom: 10px;
+                bottom: -20px;
                 color: white;
-                text-align: center;
                 width: 100%;
-                pointer-events: none
+                pointer-events: none;
+                display: flex;
+                align-items: center;
+                word-break: break-word;
+
+
+                .bold{
+                    color: transparent;
+                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: white;
+                    font-size: 70px;
+                    padding: 0 20% 40px 10px;
+                }
             }
 
             .category-info{
@@ -87,28 +99,34 @@
                 z-index: 1000;
                 position: absolute;
                 top: 0;
-                border-radius: 10px;
                 visibility: hidden;
                 opacity: 0;
                 transition: visibility 0.3s, opacity 0.3s linear;
+                text-align: center;
 
 
                 .h-title{
                     top: 10px;
-                    padding: 5px;
-                }
-
-                .h-text{
-                    top: 50px;
-                    max-height: 150px;
-                    overflow: hidden;
-                    padding: 5px;
-                    font-family: 'Conv_bpg_arial_2009';
+                    color: white;
+                    border-bottom: 1px solid white;
+                    width: 70%;
+                    margin: 50px auto;
+                    text-align: center;
+                    padding: 20px 10px;
                 }
 
                 .h-courses{                   
-                    bottom: 70px;
-                    padding: 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    margin: 25px auto;
+
+                    img{
+                        width: 25px;
+                        margin-right: 10px; 
+                        
+                    }
                 }
 
                 .h-more{
@@ -117,15 +135,21 @@
 
                 .m-button a{
                     background:  #F2F2F2;
-                    border-radius: 10px;
-                    padding: 8px 10px;
+                    border-radius: 7px;
+                    padding: 18px 10px;
                     display: flex;
                     width: 60%;
                     position: absolute;
-                    bottom: 20px;
+                    bottom: 30px;
                     align-items: center;
                     left: 20%;
-                    font-family: 'Conv_bpg_arial_2009';
+                    justify-content: space-around;
+
+                    img{
+                        width: 30px;
+                        padding-bottom: 3px;
+                    }
+                  
                     
 
                     span{
@@ -147,7 +171,6 @@
 
     .course-section{
         width: 100%;
-        background: #F2F2F2;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -213,60 +236,7 @@
         padding: 20px 10%;
         background: #F2F2F2;
 
-        .video-container{
-
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-
-            .video-box{      
-                border-radius: 10px;
-                overflow: hidden;
-                background-color: white;
-                margin: 5px;
-
-                video{
-                    width:100%;
-                }
-
-                .video-title{
-                    font-size: 20px;
-                    padding: 8px 0;
-
-                    a{
-                        color: #2C3E50;   
-                        font-family: 'Conv_bpg-web-001-caps-webfont';
-                        padding: 7px 10px 3px;
-                        transition: .3s;
-
-                        &:hover{
-                            color:#57A3C2;
-                        }
-                    }
-                   
-
-                }
-
-                .video-tags{
-                    line-height: 30px;
-                    padding: 0 10px 15px;
-
-                    a{
-                        color: #2C3E50;
-                        border: 1px solid #2C3E503D;
-                        border-radius: 5px;
-                        font-size: 14px;
-                        padding: 3px;
-                        transition: .3s;
-
-                        &:hover{
-                            border: 1px solid #2C3E50;
-                        }
-                    }
-                }
-
-            }
-        }
+      
 
 
         .slick-next{
