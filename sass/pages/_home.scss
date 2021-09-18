@@ -45,7 +45,8 @@
         }
     }
 
-    .category-container{
+
+    .category-container, .category-slider{
         width: 100%;
         background: #F2F2F2;
         display: flex;
@@ -167,6 +168,13 @@
             }
         }
     }
+
+    .category-slider{
+        display: none;
+    }
+
+    
+  
 
 
     .course-section{

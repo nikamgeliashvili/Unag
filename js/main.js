@@ -36,6 +36,8 @@ $('.review-slider').slick({
             settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
+            arrows:false,
+            dots:true,
             }
         },
     
@@ -135,6 +137,40 @@ $('.course-page-slider').slick({
         ]
 
 });
+
+
+
+$('.category-slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots:false,
+    arrows:true,
+
+    responsive:[
+        
+        {
+            breakpoint: 992,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots:true,
+            }
+        },
+    
+    
+        ]
+
+});
+
+
+
+
+
+
+$('#nav-icon1').on('click',function(){
+    $('.header-left, .header-right').toggleClass('header-active')
+})
 
 
 $('.dropdown-box').on('click',function(){
