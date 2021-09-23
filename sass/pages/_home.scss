@@ -52,6 +52,8 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
         
 
 
@@ -182,7 +184,7 @@
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        padding: 30px 10%;
+        padding: 50px 10%;
 
         .main-img{
             width: 50%;
@@ -198,7 +200,7 @@
             background: white;
 
             .describe-text{
-                max-height: 261px;
+                max-height: 270px;
                 overflow: hidden;
             }
 
@@ -218,6 +220,7 @@
 
             span{
                 color: #2980B9;
+                font-family: 'BPG WEB 001';
             }
 
             .course-button{

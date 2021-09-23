@@ -232,14 +232,28 @@
                     <label for="surname" title="დაბადების თარიღი" data-title="დაბადების თარიღი"></label>
 				   </div>
     
-                    <div class="field">
-                        <input type="text" required  id="surname" value="გელაშვილი">
-                        <label for="surname" title="გვარი" data-title="გვარი"></label>
-                    </div>
+				   <div class="form-select">
+					<span>
+						გენდერი
+					</span>
+					<select name="" id="">
+						<option value="">გენდერი</option>
+						<option value="">მამაკაცი</option>
+						<option value="">ქალი</option> b 
+					</select>
+
+					<div class="dropdown-img">
+						<img src="images/select-dropdown.png " alt="">
+					</div>
+				</div>
                 </div>
 
                 <div class="d-flex">
                     <div class="form-select">
+
+						<span>მუნიციპალიტეტი</span>
+
+						
                         <select name="" id="">
                             <option value="">მუნიციპალიტეტი</option>
                             <option value="">მუნიციპალიტეტი</option>
@@ -252,6 +266,10 @@
                     </div>
 
                     <div class="form-select">
+
+						<span>
+							ერთეული
+						</span>
                         <select name="" id="">
                             <option value="">ერთეული</option>
                             <option value="">ერთეული</option>
@@ -266,7 +284,7 @@
 
                 </div>
 
-                <div class="d-flex">
+                <div class="d-flex d-border">
                     <div class="field">
                         <input type="number" required autocomplete="off" id="phone" value="555555555">
                         <label for="phone" title="ტელეფონი" data-title="ტელეფონი"></label>
@@ -281,6 +299,8 @@
 				<button >
 					პაროლის შეცვლა
 				</button>
+
+				<div class="d-border"></div>
 
 				<button class="change-button">
 					ცვლილებების შენახვა

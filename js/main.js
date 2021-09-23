@@ -72,7 +72,7 @@ $('.video-container').slick({
 
 
 $('.about-slider').slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     dots:false,

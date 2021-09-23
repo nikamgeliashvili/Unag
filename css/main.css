@@ -109,7 +109,7 @@ a:hover {
     color: #2980B9; }
   .pagination a {
     color: #2C3E50;
-    background: white;
+    background: transparent;
     font-size: 16px;
     padding: 8px 16px 5px;
     font-family: 'BPG WEB 001';
@@ -132,9 +132,10 @@ a:hover {
 .c-button {
   background: #F8C934;
   color: white;
-  padding: 7px 18px;
+  padding: 10px 18px;
   transition: .3s;
-  border-radius: 10px; }
+  border-radius: 6px;
+  font-family: 'Conv_bpg-web-001-caps-webfont'; }
 
 .slider-bg {
   width: 100%;
@@ -287,7 +288,8 @@ header {
     border: unset; }
 
 .main-header {
-  position: unset; }
+  position: unset;
+  box-shadow: 0px -4px 15px #6e6e6e; }
   .main-header .header-left ul li a, .main-header header .header-right ul li a {
     color: #2C3E50;
     padding: 8px 18px;
@@ -297,7 +299,7 @@ header {
   .main-header .active a {
     opacity: 1 !important; }
   .main-header .reg-button {
-    color: #57A3C2;
+    color: white;
     border: 1px solid #57A3C2;
     border-radius: 11px;
     margin-right: 10px;
@@ -315,7 +317,7 @@ header {
   .avatar-upload .avatar-edit {
     position: absolute;
     z-index: 1;
-    bottom: 50px; }
+    bottom: 80px; }
     .avatar-upload .avatar-edit input {
       display: none; }
       .avatar-upload .avatar-edit input + label {
@@ -339,8 +341,8 @@ header {
           text-align: center;
           margin: auto; }
   .avatar-upload .avatar-preview {
-    width: 192px;
-    height: 192px;
+    width: 130px;
+    height: 130px;
     position: relative;
     border-radius: 100%;
     border: 6px solid #F8F8F8;
@@ -474,6 +476,11 @@ footer {
         display: flex;
         flex-direction: column;
         padding-bottom: 10px; }
+    footer .f-container .l-footer div:last-child {
+      margin-top: 20px; }
+    footer .f-container .r-footer > div:last-child {
+      border-left: 1px solid white;
+      padding-left: 30px; }
     footer .f-container a {
       color: white; }
     footer .f-container li {
@@ -548,7 +555,9 @@ footer {
   background: #F2F2F2;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto; }
   .main-container .category-container .category, .main-container .category-slider .category {
     position: relative;
     width: 25%;
@@ -630,7 +639,7 @@ footer {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 30px 10%; }
+  padding: 50px 10%; }
   .main-container .course-section .main-img {
     width: 50%; }
     .main-container .course-section .main-img img {
@@ -640,7 +649,7 @@ footer {
     padding: 20px;
     background: white; }
     .main-container .course-section .describe .describe-text {
-      max-height: 261px;
+      max-height: 270px;
       overflow: hidden; }
     .main-container .course-section .describe .main-title {
       font-size: 28px;
@@ -651,7 +660,8 @@ footer {
       font-family: 'Conv_bpg_arial_2009';
       color: #2C3E50; }
     .main-container .course-section .describe span {
-      color: #2980B9; }
+      color: #2980B9;
+      font-family: 'BPG WEB 001'; }
     .main-container .course-section .describe .course-button {
       text-align: center;
       padding-top: 20px; }
@@ -735,7 +745,8 @@ footer {
       align-items: center;
       justify-content: center;
       border: 1px solid #BBC8D3;
-      padding: 40px 0 140px; }
+      padding: 40px 0 140px;
+      max-height: 340px; }
     .user-page .user-container .user-form {
       width: 60%;
       display: block;
@@ -753,15 +764,29 @@ footer {
           width: 49%; }
           .user-page .user-container .user-form .d-flex .form-select select {
             margin-bottom: 20px; }
+          .user-page .user-container .user-form .d-flex .form-select span {
+            position: absolute;
+            line-height: 20px;
+            font-size: 12px;
+            top: -10px;
+            background: #fff;
+            padding: 0 6px;
+            left: 9px;
+            color: #777; }
+      .user-page .user-container .user-form .d-border {
+        border-top: 1px solid #BBC8D3;
+        padding-top: 20px; }
       .user-page .user-container .user-form button {
         background-color: #DBE3EB;
-        color: #2C3E50; }
+        color: #2C3E50;
+        margin: 0 auto 20px; }
       .user-page .user-container .user-form .change-button {
         width: 50%;
         float: right;
         color: white;
         background: #57A3C2;
-        transition: .3s; }
+        transition: .3s;
+        font-family: 'Conv_bpg-web-001-caps-webfont'; }
         .user-page .user-container .user-form .change-button:hover {
           background: #F8C934;
           color: white; }
@@ -895,7 +920,7 @@ footer {
     min-height: unset; }
   .course-banner .search-container {
     width: 50%;
-    margin: 0 auto;
+    margin: 20px auto 0;
     background: white;
     border-radius: 10px;
     padding: 7px; }
@@ -926,7 +951,7 @@ footer {
           background: #57A3C2;
           outline: none;
           border-radius: 7px;
-          padding: 10px 15px;
+          padding: 10px 30px;
           cursor: pointer; }
       .course-banner .search-container .search-form .filter-box {
         position: absolute;
@@ -1125,7 +1150,7 @@ footer {
         border-right: unset; }
 
 .course-page-b {
-  background: #F2EFDF; }
+  background: #F2F2F2; }
   .course-page-b .common-title {
     color: #2C3E50;
     font-size: 32px;
@@ -1243,30 +1268,33 @@ footer {
     margin: unset !important;
     width: 100% !important; }
 
-.certificate-container .title {
-  color: #2C3E50;
-  font-size: 32px;
-  font-family: 'Conv_bpg-web-001-caps-webfont';
-  text-align: center;
-  padding: 50px 20px; }
-.certificate-container .cert-box {
-  width: 80%;
-  margin: 0 auto;
-  padding-bottom: 30px; }
-  .certificate-container .cert-box .cert-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 30px 20px; }
-    .certificate-container .cert-box .cert-info .cert-title {
-      color: #2C3E50;
-      font-size: 22px;
-      font-family: 'Conv_bpg-web-001-caps-webfont'; }
-    .certificate-container .cert-box .cert-info span {
-      color: #2C3E50;
-      font-family: 'BPG WEB 001';
-      max-height: 98px;
-      overflow: hidden; }
+.certificate-container {
+  padding-bottom: 50px; }
+  .certificate-container .title {
+    color: #2C3E50;
+    font-size: 32px;
+    font-family: 'Conv_bpg-web-001-caps-webfont';
+    text-align: center;
+    padding: 50px 20px; }
+  .certificate-container .cert-box {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 30px; }
+    .certificate-container .cert-box .cert-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 30px 20px;
+      text-align: center; }
+      .certificate-container .cert-box .cert-info .cert-title {
+        color: #2C3E50;
+        font-size: 22px;
+        font-family: 'Conv_bpg-web-001-caps-webfont';
+        padding-bottom: 20px; }
+      .certificate-container .cert-box .cert-info span {
+        color: #2C3E50;
+        font-family: 'BPG WEB 001';
+        overflow: hidden; }
 
 .cert-page-container {
   padding-bottom: 50px; }
@@ -1274,7 +1302,7 @@ footer {
     border: 1px solid #707070;
     border-radius: 7px;
     background-color: white;
-    width: 70%;
+    width: 50%;
     margin: 20px auto; }
     .cert-page-container .cert-page-box .bottom {
       justify-content: space-between;
@@ -1286,14 +1314,13 @@ footer {
       .cert-page-container .cert-page-box .bottom .b-name {
         color: #2C3E50;
         border-bottom: 1px solid #2C3E50;
-        padding-bottom: 7px;
+        padding: 20px 0;
         width: 50%;
         margin-left: 40px; }
       .cert-page-container .cert-page-box .bottom .b-date {
         color: #2C3E50;
         border-bottom: 1px solid #2C3E50;
-        padding-bottom: 7px;
-        padding: 7px 15px;
+        padding: 20px 7px;
         margin-right: 40px; }
     .cert-page-container .cert-page-box .big-title {
       font-size: 50px;
@@ -1316,7 +1343,7 @@ footer {
     font-family: 'BPG WEB 001';
     border-radius: 5px;
     border: 1px solid #57A3C2;
-    padding: 10px 15px;
+    padding: 10px 25px;
     transition: .3s;
     margin-right: 20px;
     font-family: 'Conv_bpg-web-001-caps-webfont'; }
@@ -1438,6 +1465,12 @@ footer {
         .main-header .header-right .reg-button a {
           color: #2C3E50; }
 
+  .registration {
+    width: 95%;
+    left: 0;
+    top: 30px;
+    margin: 100px 10px 10px; }
+
   .main-container .banner-text .banner-title {
     font-size: 32px;
     padding: 0px 10px; }
@@ -1461,7 +1494,8 @@ footer {
   .main-container .category-container {
     display: none; }
   .main-container .category-slider {
-    display: block; }
+    display: block;
+    width: 100%; }
     .main-container .category-slider .slick-dots {
       bottom: -30px; }
       .main-container .category-slider .slick-dots li button:before {
@@ -1567,22 +1601,19 @@ footer {
     .cert-page-container .cert-page-box .bottom {
       font-size: 12px; }
       .cert-page-container .cert-page-box .bottom .b-date {
-        padding: unset;
         margin-right: 10px; }
       .cert-page-container .cert-page-box .bottom .b-name {
         margin-left: 10px; }
 
   .certificate-container .cert-box {
     width: 90%; }
-    .certificate-container .cert-box .d-flex {
-      flex-direction: column; }
-      .certificate-container .cert-box .d-flex .cert-img img {
-        width: 100%;
-        overflow: hidden; }
-      .certificate-container .cert-box .d-flex .cert-info {
-        padding: 20px 0; }
-        .certificate-container .cert-box .d-flex .cert-info span {
-          margin: 10px 0; }
+    .certificate-container .cert-box .d-flex .cert-img img {
+      width: 100%;
+      overflow: hidden; }
+    .certificate-container .cert-box .d-flex .cert-info {
+      padding: 20px 0; }
+      .certificate-container .cert-box .d-flex .cert-info span {
+        margin: 10px 0; }
 
   .course-banner .banner-text {
     top: 20%; }

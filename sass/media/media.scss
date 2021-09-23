@@ -174,6 +174,14 @@
     }
 
 
+    .registration{
+        width: 95%;
+        left: 0;
+        top: 30px;
+        margin: 100px 10px 10px;
+    }
+
+
     .main-container{
 
         .banner-text{
@@ -227,6 +235,7 @@
 
         .category-slider{
             display: block;
+            width: 100%;
 
             .slick-dots{
                 bottom: -30px;
@@ -430,7 +439,6 @@
         .bottom{
             font-size: 12px;
             .b-date{
-                padding: unset;
                 margin-right: 10px;
             };
 
@@ -444,7 +452,7 @@
         width: 90%;
 
         .d-flex{
-            flex-direction: column;
+            // flex-direction: column;
 
             .cert-img img{
                 width: 100%;

@@ -17,6 +17,7 @@
             justify-content: center;
             border: 1px solid #BBC8D3;
             padding: 40px 0 140px;
+            max-height: 340px;
         }
 
 
@@ -29,6 +30,9 @@
             padding: 10px;
             // border-bottom: 1px solid #DBE3EB;
             border-radius: unset;
+
+            
+            
 
             .d-flex{
                 justify-content: space-between;
@@ -44,12 +48,34 @@
                     select{
                         margin-bottom: 20px;
                     }
+
+                    span{
+                        position: absolute;
+                        line-height: 20px;
+                        font-size: 12px;
+                        top: -10px;
+                        background: #fff;
+                        padding: 0 6px;
+                        left: 9px;
+                        color: #777;
+                    }
                  }
+
+                 
+
             }
 
+            .d-border{
+                border-top: 1px solid #BBC8D3;
+                padding-top:20px;
+                
+            }
+
+         
             button{
                 background-color: #DBE3EB;
                 color:#2C3E50;
+                margin: 0 auto 20px;
 
             }
 
@@ -59,6 +85,7 @@
                 color: white;
                 background: #57A3C2;
                 transition: .3s;
+                font-family: 'Conv_bpg-web-001-caps-webfont';
 
                 &:hover{
                     background: #F8C934;
@@ -68,3 +95,4 @@
         }
     }
 }
+

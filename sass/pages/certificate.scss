@@ -1,4 +1,5 @@
 .certificate-container{
+    padding-bottom: 50px;
 
     .title{
         color: #2C3E50;
@@ -20,18 +21,19 @@
             flex-direction: column;
             justify-content: space-around;
             padding: 30px 20px;
+            text-align: center;
 
             .cert-title{
                 color:#2C3E50;
                 font-size: 22px;
     	        font-family: 'Conv_bpg-web-001-caps-webfont';
+                padding-bottom: 20px;
 
             }
 
             span{
                 color:#2C3E50;
                 font-family: 'BPG WEB 001';
-                max-height: 98px;
                 overflow: hidden;
             }
 
@@ -50,7 +52,7 @@
         border: 1px solid #707070;
         border-radius: 7px;
         background-color: white;
-        width: 70%;
+        width: 50%;
         margin: 20px auto;
 
         .bottom{
@@ -66,7 +68,7 @@
             .b-name{
                 color: #2C3E50;
                 border-bottom: 1px solid #2C3E50;
-                padding-bottom: 7px;
+                padding:20px 0;
                 width: 50%;
                 margin-left: 40px;
             }
@@ -74,8 +76,8 @@
             .b-date{
                 color: #2C3E50;
                 border-bottom: 1px solid #2C3E50;
-                padding-bottom: 7px;
-                padding: 7px 15px;
+                
+                padding: 20px 7px;
                 margin-right: 40px;
                 
             }
@@ -110,7 +112,7 @@
         font-family: 'BPG WEB 001';
         border-radius: 5px;
         border: 1px solid #57A3C2;
-        padding: 10px 15px;
+        padding: 10px 25px;
         transition: .3s;
         margin-right: 20px;
         font-family: 'Conv_bpg-web-001-caps-webfont';
