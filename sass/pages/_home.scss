@@ -200,7 +200,7 @@
             background: white;
 
             .describe-text{
-                max-height: 270px;
+                max-height: 285px;
                 overflow: hidden;
             }
 
@@ -319,7 +319,7 @@
         .review-slide{
             display: flex;
             align-items: center;
-            margin: 0px auto 35px;
+            margin: 0px auto 100px;
 
             p{
                 font-family: 'Conv_bpg_arial_2009';
@@ -345,4 +345,6 @@
             }
         }
     }   
+
+    
 }

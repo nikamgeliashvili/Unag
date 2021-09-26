@@ -5,7 +5,7 @@
             width: 90%;
             padding: 45px 0 0;
 
-            .c-footer, .l-footer, .r-footer{
+             .r-footer{
                 width: 100%;
                 max-width: unset;
                 margin-bottom: 50px;
@@ -13,6 +13,10 @@
                 ul{
                     padding-left: 15px;
                 }
+            }
+
+            .c-footer, .l-footer{
+                display: none;
             }
 
         }
@@ -174,7 +178,7 @@
     }
 
 
-    .registration{
+    .registration, .auth-form, .password-restore{
         width: 95%;
         left: 0;
         top: 30px;
@@ -296,7 +300,9 @@
             }
         }
 
-        .review-slider {
+       
+
+        .review-section {
             padding:10px 20px 60px;
             
             .review-slide{
@@ -306,7 +312,8 @@
 
                 .r-name{
                     position: absolute;
-                    bottom: -40px;
+                    bottom: -50px;
+                    text-align: center;
                 }
 
 
@@ -388,6 +395,76 @@
     .course-container{
         width: 95%;
 
+
+        .course-page-top{
+            top: -450px;
+
+            .page-top-text .text {
+                width: 100%;
+          
+            }
+
+
+            .button{
+                margin-top: 20px;
+            }
+
+            .cert-link {
+                flex-direction: column;
+                align-items: unset;
+
+                .c-link {
+                    margin: 10px 0 25px;
+                }
+            }
+
+            .page-top-text{
+                flex-direction: column;
+
+                .button a{
+                    width: 100%;
+                    text-align: center;
+                    padding: 25px 15px;
+                   
+                }
+            }
+        }
+
+        .nav-tabs{
+            width: 100%;
+
+            .nav-item{
+                .nav-link {
+                font-size: 18px !important;
+                border-bottom: 4px solid transparent;
+            } 
+
+            .active{
+                border-bottom: 4px solid #2C3E50 !important;
+            }
+            }
+
+           
+        }
+
+        .tab-content {
+            width: 100%;
+
+            .tab-pane {
+                padding: 0 10px;
+            }
+
+
+            .t-name h2{
+                font-size: 20px !important;
+            }
+
+            .tab-section {
+                padding: 20px !important;
+            }
+        }
+
+
         .category-text{
 
             .cat-number{
@@ -410,6 +487,7 @@
 
                 .video-box{
                     width: 100%;
+                    
                 }
             }
         }
@@ -470,7 +548,15 @@
        }
     }
 
+    .b-banner{
+        height: 100vh;
+    }
+
     .course-banner{
+
+        .blue-bg{
+            height: 100vh;
+        }
 
         .banner-text{
             top: 20%;
@@ -512,7 +598,20 @@
 
     .course-page-b{
 
+        .course-page-slider{
+            width:95%;
 
+
+            .course-box img {
+                width:100%;
+                height: unset;
+            }
+
+            .cert-link a img{
+                width: 20px;
+            }
+
+        }
         .common-title{
             width: 95%;
         }
@@ -566,4 +665,25 @@
 
 
 }
+
+
+
+@media only screen and (max-width: 576px) {
+    .course-container .nav-tabs {
+        width: 100%;
+        flex-direction: column;
+    }
+
+
+    .course-container .tab-content .tab-right .t-section img {
+        width: 100px;
+        height: 100px;
+      
+    }
+
+    .course-container .tab-content .tab-right .t-section .t-name {
+        margin: 0 0 10px;
+    }
+}
+
 

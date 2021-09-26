@@ -138,3 +138,106 @@
     justify-content: center;
     padding: 40px 0 20px;
 }
+
+.test-container{
+    padding: 50px 15px;
+
+    .title{
+      
+        text-align: center;
+
+
+        .main-title{
+            padding: 30px 20px 15px;
+        }
+
+        .t-bottom{
+            margin:0 auto;
+            width: 60%;
+            text-align: center;
+
+            span{
+                color: #2C3E50;
+                font-family: 'Conv_bpg_arial_2009';
+            }
+        }
+
+    }
+
+    .border{
+        
+        width: 70%;
+        margin: 20px auto;
+        border: 1px solid;
+        padding: 30px 80px;
+
+    }
+
+    .test-box{
+        width: 70%;
+        margin: 20px auto;
+        padding: 30px 80px;
+
+        .test-title{
+            font-size: 18px;
+            font-family: 'Conv_bpg-web-001-caps-webfont';
+            color: #2C3E50;
+            text-align: center;
+            border-bottom: 1px solid #DCDCDC;
+            padding: 20px;
+        }
+
+        .test-form{
+            font-family: 'Conv_bpg_arial_2009';
+            padding-top: 10px;
+
+            .answer{
+                display: flex;
+                align-items: center;
+                margin: 10px 0;
+
+                label{
+                    margin-bottom: unset;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .d-test{
+            font-family: 'Conv_bpg_arial_2009';
+
+            .d-answer{
+                background: #FFF4F5;
+                padding: 15px;
+                margin-top: 20px;
+              
+                display: flex;
+                align-items: center;
+                border-radius: 2px;
+
+                img{
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 20px;
+                }
+            }
+
+            .d-info{
+
+                padding: 15px 15px 15px 0;
+                display: flex;
+                align-items: center;
+
+                img{
+                    border:1px solid #EBEBEB;
+                    border-radius: 50%;
+                    padding: 6px;
+                    width: 35px;
+                    height: 35px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+

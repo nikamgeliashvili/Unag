@@ -12,6 +12,12 @@
     .slider-bg{
         height: 80vh;
         min-height: unset;
+        
+    }
+
+    .blue-bg{
+        background: #57A3C2;
+        z-index: 0;
     }
 
     
@@ -117,6 +123,7 @@
     padding: 30px 0;
     width:80%;
     margin: 0 auto;
+    position: relative;
 
 
     .category-text{
@@ -237,11 +244,14 @@
         padding-top: 20px;
         display: flex;
         justify-content: space-between;
+        position: absolute;
+        top: -280px;
+        width: 100%;
         
         .title{
             font-family: 'Conv_bpg-web-001-caps-webfont';
             font-size: 24px;
-            color: #2C3E50;
+            color: white;
         }
 
         .cert-link{
@@ -344,6 +354,7 @@
                 .title{
                     color: #3498DB;
                     
+                    
                 }
             }
 
@@ -364,7 +375,43 @@
                     }
                 }
             }
+            
+            .t-section:last-child { border-bottom: none; }
+       
+            .t-section{
+                display: flex;
+                padding: 30px 0;
+                border-bottom: 1px solid #E2E2E2;
+
+                img{
+                    width: 170px;
+                    height: 170px;
+                    border-radius: 50%;
+                    margin-right: 15px;
+                }
+
+                span{
+                    font-family: 'BPG WEB 001';
+                    color: #2C3E50;
+                }
+
+                .t-name{
+                    margin: 30px 0 10px;
+
+                    h2{
+                        font-family: 'Conv_bpg-web-001-caps-webfont';
+                        color: #2C3E50;
+                    }
+                }
+
+
+            }
         }
+
+        .p-none{
+            padding:0;
+        }
+
 
         .hide{
             max-height: 1490px !important;
@@ -412,6 +459,77 @@
 }
 
 
+.course-page-container{
+    .page-top-text{
+        color:white;
+        font-family: 'Conv_bpg_arial_2009';
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .text{
+            width: 70%;
+            max-height: 75px;
+            overflow: hidden;
+        }
+    }
+
+    .course-page-top{
+
+        .b-width{
+            width: 100%;
+            padding: 10px;
+        }
+
+        .button{
+
+            a{
+                background-color: rgba(0, 0, 0, 0.1);
+                font-family: 'Conv_bpg-web-001-caps-webfont';
+            }
+
+        }
+    }
+
+    .cert-link{
+        padding: unset !important;
+        margin-top: 10px;
+        margin-bottom: 30px;
+
+        display: flex;
+        align-items: center;
+
+        
+      .c-link {
+        margin-right: 25px;
+
+        a{
+            background: white;
+            padding: 15px;
+            border-radius: 7px;
+        }
+      } 
+
+        .acc-link{
+            display: flex;
+            align-items: center;
+
+            a{
+                color: white;
+                font-family: 'Conv_bpg-web-001-caps-webfont';
+    
+                img{
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-right: 5px;
+                }
+            } 
+        } 
+    }
+}
+
 
 .course-page-b{
     background: #F2F2F2;
@@ -429,7 +547,7 @@
     .course-page-slider, .finished-courses{
         width: 80%;
         margin: 0 auto;
-        padding-bottom: 50px;
+        padding-bottom: 70px;
 
         .course-box{
             margin: 5px;
@@ -441,6 +559,22 @@
                 height: 120px;
             }
         }
+
+
+        .slick-dots li button:before {
+            color: #6E6E6E;
+            
+        }
+
+        .slick-dots li.slick-active button:before {
+            opacity: 1;
+            color: #003E92;
+            font-size: 22px;
+            border: 1px solid #003E92;
+            border-radius: 50%;
+        }
+        
+
 
 
 
@@ -608,7 +742,7 @@
     }
 
     .cert-link{
-        margin: unset !important;
-        width: 100% !important;
+        margin: 10px auto !important;
+        width: 95% !important;
     }
 }

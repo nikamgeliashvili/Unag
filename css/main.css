@@ -113,8 +113,7 @@ a:hover {
     font-size: 16px;
     padding: 8px 16px 5px;
     font-family: 'BPG WEB 001';
-    transition: .3s;
-    border-bottom: 2px solid white; }
+    transition: .3s; }
     .pagination a:hover, .pagination a .active {
       border-bottom: 2px solid #2980B9;
       color: #2980B9; }
@@ -132,7 +131,7 @@ a:hover {
 .c-button {
   background: #F8C934;
   color: white;
-  padding: 10px 18px;
+  padding: 15px 18px;
   transition: .3s;
   border-radius: 6px;
   font-family: 'Conv_bpg-web-001-caps-webfont'; }
@@ -176,7 +175,7 @@ a:hover {
     margin: 10px auto;
     cursor: pointer; }
   .registration .transparent, .common-form .transparent {
-    color: #57A3C2;
+    color: #57A3C2 !important;
     background: #FFFFFF;
     border: 1px solid #57A3C2; }
   .registration .close, .common-form .close {
@@ -649,7 +648,7 @@ footer {
     padding: 20px;
     background: white; }
     .main-container .course-section .describe .describe-text {
-      max-height: 270px;
+      max-height: 285px;
       overflow: hidden; }
     .main-container .course-section .describe .main-title {
       font-size: 28px;
@@ -714,7 +713,7 @@ footer {
   .main-container .review-slider .review-slide {
     display: flex;
     align-items: center;
-    margin: 0px auto 35px; }
+    margin: 0px auto 100px; }
     .main-container .review-slider .review-slide p {
       font-family: 'Conv_bpg_arial_2009';
       max-height: 145px;
@@ -801,7 +800,7 @@ footer {
     display: flex; }
     .about-container .about-us .def-text {
       width: 50%;
-      padding-right: 10px;
+      padding-right: 20px;
       max-height: 330px;
       overflow: hidden; }
     .about-container .about-us .about-slider {
@@ -918,6 +917,9 @@ footer {
   .course-banner .slider-bg {
     height: 80vh;
     min-height: unset; }
+  .course-banner .blue-bg {
+    background: #57A3C2;
+    z-index: 0; }
   .course-banner .search-container {
     width: 50%;
     margin: 20px auto 0;
@@ -985,7 +987,8 @@ footer {
 .course-container {
   padding: 30px 0;
   width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
   .course-container .category-text {
     color: #2C3E50;
     font-family: 'BPG WEB 001';
@@ -1057,11 +1060,14 @@ footer {
   .course-container .course-page-top {
     padding-top: 20px;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    position: absolute;
+    top: -280px;
+    width: 100%; }
     .course-container .course-page-top .title {
       font-family: 'Conv_bpg-web-001-caps-webfont';
       font-size: 24px;
-      color: #2C3E50; }
+      color: white; }
     .course-container .course-page-top .cert-link {
       padding: 16px; }
       .course-container .course-page-top .cert-link a {
@@ -1127,6 +1133,27 @@ footer {
       color: #2C3E50; }
       .course-container .tab-content .tab-right .components a img {
         padding-right: 10px; }
+    .course-container .tab-content .tab-right .t-section:last-child {
+      border-bottom: none; }
+    .course-container .tab-content .tab-right .t-section {
+      display: flex;
+      padding: 30px 0;
+      border-bottom: 1px solid #E2E2E2; }
+      .course-container .tab-content .tab-right .t-section img {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        margin-right: 15px; }
+      .course-container .tab-content .tab-right .t-section span {
+        font-family: 'BPG WEB 001';
+        color: #2C3E50; }
+      .course-container .tab-content .tab-right .t-section .t-name {
+        margin: 30px 0 10px; }
+        .course-container .tab-content .tab-right .t-section .t-name h2 {
+          font-family: 'Conv_bpg-web-001-caps-webfont';
+          color: #2C3E50; }
+    .course-container .tab-content .p-none {
+      padding: 0; }
     .course-container .tab-content .hide {
       max-height: 1490px !important;
       transition: max-height 1s linear; }
@@ -1149,6 +1176,47 @@ footer {
         padding: 4px 6px;
         border-right: unset; }
 
+.course-page-container .page-top-text {
+  color: white;
+  font-family: 'Conv_bpg_arial_2009';
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+  .course-page-container .page-top-text .text {
+    width: 70%;
+    max-height: 75px;
+    overflow: hidden; }
+.course-page-container .course-page-top .b-width {
+  width: 100%;
+  padding: 10px; }
+.course-page-container .course-page-top .button a {
+  background-color: rgba(0, 0, 0, 0.1);
+  font-family: 'Conv_bpg-web-001-caps-webfont'; }
+.course-page-container .cert-link {
+  padding: unset !important;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center; }
+  .course-page-container .cert-link .c-link {
+    margin-right: 25px; }
+    .course-page-container .cert-link .c-link a {
+      background: white;
+      padding: 15px;
+      border-radius: 7px; }
+  .course-page-container .cert-link .acc-link {
+    display: flex;
+    align-items: center; }
+    .course-page-container .cert-link .acc-link a {
+      color: white;
+      font-family: 'Conv_bpg-web-001-caps-webfont'; }
+      .course-page-container .cert-link .acc-link a img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 5px; }
+
 .course-page-b {
   background: #F2F2F2; }
   .course-page-b .common-title {
@@ -1161,7 +1229,7 @@ footer {
   .course-page-b .course-page-slider, .course-page-b .finished-courses {
     width: 80%;
     margin: 0 auto;
-    padding-bottom: 50px; }
+    padding-bottom: 70px; }
     .course-page-b .course-page-slider .course-box, .course-page-b .finished-courses .course-box {
       margin: 5px;
       overflow: hidden;
@@ -1169,6 +1237,14 @@ footer {
       background-color: white; }
       .course-page-b .course-page-slider .course-box img, .course-page-b .finished-courses .course-box img {
         height: 120px; }
+    .course-page-b .course-page-slider .slick-dots li button:before, .course-page-b .finished-courses .slick-dots li button:before {
+      color: #6E6E6E; }
+    .course-page-b .course-page-slider .slick-dots li.slick-active button:before, .course-page-b .finished-courses .slick-dots li.slick-active button:before {
+      opacity: 1;
+      color: #003E92;
+      font-size: 22px;
+      border: 1px solid #003E92;
+      border-radius: 50%; }
     .course-page-b .course-page-slider .slick-prev, .course-page-b .finished-courses .slick-prev {
       left: 10px;
       z-index: 111;
@@ -1265,8 +1341,8 @@ footer {
       overflow: hidden;
       margin-bottom: 15px; }
   .finished-courses .cert-link {
-    margin: unset !important;
-    width: 100% !important; }
+    margin: 10px auto !important;
+    width: 95% !important; }
 
 .certificate-container {
   padding-bottom: 50px; }
@@ -1361,17 +1437,83 @@ footer {
   justify-content: center;
   padding: 40px 0 20px; }
 
+.test-container {
+  padding: 50px 15px; }
+  .test-container .title {
+    text-align: center; }
+    .test-container .title .main-title {
+      padding: 30px 20px 15px; }
+    .test-container .title .t-bottom {
+      margin: 0 auto;
+      width: 60%;
+      text-align: center; }
+      .test-container .title .t-bottom span {
+        color: #2C3E50;
+        font-family: 'Conv_bpg_arial_2009'; }
+  .test-container .border {
+    width: 70%;
+    margin: 20px auto;
+    border: 1px solid;
+    padding: 30px 80px; }
+  .test-container .test-box {
+    width: 70%;
+    margin: 20px auto;
+    padding: 30px 80px; }
+    .test-container .test-box .test-title {
+      font-size: 18px;
+      font-family: 'Conv_bpg-web-001-caps-webfont';
+      color: #2C3E50;
+      text-align: center;
+      border-bottom: 1px solid #DCDCDC;
+      padding: 20px; }
+    .test-container .test-box .test-form {
+      font-family: 'Conv_bpg_arial_2009';
+      padding-top: 10px; }
+      .test-container .test-box .test-form .answer {
+        display: flex;
+        align-items: center;
+        margin: 10px 0; }
+        .test-container .test-box .test-form .answer label {
+          margin-bottom: unset;
+          margin-left: 10px; }
+    .test-container .test-box .d-test {
+      font-family: 'Conv_bpg_arial_2009'; }
+      .test-container .test-box .d-test .d-answer {
+        background: #FFF4F5;
+        padding: 15px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        border-radius: 2px; }
+        .test-container .test-box .d-test .d-answer img {
+          width: 16px;
+          height: 16px;
+          margin-right: 20px; }
+      .test-container .test-box .d-test .d-info {
+        padding: 15px 15px 15px 0;
+        display: flex;
+        align-items: center; }
+        .test-container .test-box .d-test .d-info img {
+          border: 1px solid #EBEBEB;
+          border-radius: 50%;
+          padding: 6px;
+          width: 35px;
+          height: 35px;
+          margin-right: 20px; }
+
 @media only screen and (max-width: 992px) {
   footer .f-container {
     flex-direction: column;
     width: 90%;
     padding: 45px 0 0; }
-    footer .f-container .c-footer, footer .f-container .l-footer, footer .f-container .r-footer {
+    footer .f-container .r-footer {
       width: 100%;
       max-width: unset;
       margin-bottom: 50px; }
-      footer .f-container .c-footer ul, footer .f-container .l-footer ul, footer .f-container .r-footer ul {
+      footer .f-container .r-footer ul {
         padding-left: 15px; }
+    footer .f-container .c-footer, footer .f-container .l-footer {
+      display: none; }
   footer .footer-bottom {
     flex-direction: column;
     width: 100%;
@@ -1465,7 +1607,7 @@ footer {
         .main-header .header-right .reg-button a {
           color: #2C3E50; }
 
-  .registration {
+  .registration, .auth-form, .password-restore {
     width: 95%;
     left: 0;
     top: 30px;
@@ -1527,22 +1669,23 @@ footer {
       padding: 10px; }
     .main-container .video-section .slick-prev, .main-container .video-section .slick-next {
       top: -28px; }
-  .main-container .review-slider {
+  .main-container .review-section {
     padding: 10px 20px 60px; }
-    .main-container .review-slider .review-slide {
+    .main-container .review-section .review-slide {
       flex-direction: column;
       position: relative; }
-      .main-container .review-slider .review-slide .r-name {
+      .main-container .review-section .review-slide .r-name {
         position: absolute;
-        bottom: -40px; }
-    .main-container .review-slider li button:before {
+        bottom: -50px;
+        text-align: center; }
+    .main-container .review-section li button:before {
       color: #6E6E6E;
       display: flex;
       align-items: center;
       justify-content: center; }
-    .main-container .review-slider .slick-dots {
+    .main-container .review-section .slick-dots {
       bottom: 10px; }
-      .main-container .review-slider .slick-dots li.slick-active button:before {
+      .main-container .review-section .slick-dots li.slick-active button:before {
         opacity: 1;
         color: #003E92;
         border: 1px solid #003E92;
@@ -1575,6 +1718,38 @@ footer {
 
   .course-container {
     width: 95%; }
+    .course-container .course-page-top {
+      top: -450px; }
+      .course-container .course-page-top .page-top-text .text {
+        width: 100%; }
+      .course-container .course-page-top .button {
+        margin-top: 20px; }
+      .course-container .course-page-top .cert-link {
+        flex-direction: column;
+        align-items: unset; }
+        .course-container .course-page-top .cert-link .c-link {
+          margin: 10px 0 25px; }
+      .course-container .course-page-top .page-top-text {
+        flex-direction: column; }
+        .course-container .course-page-top .page-top-text .button a {
+          width: 100%;
+          text-align: center;
+          padding: 25px 15px; }
+    .course-container .nav-tabs {
+      width: 100%; }
+      .course-container .nav-tabs .nav-item .nav-link {
+        font-size: 18px !important;
+        border-bottom: 4px solid transparent; }
+      .course-container .nav-tabs .nav-item .active {
+        border-bottom: 4px solid #2C3E50 !important; }
+    .course-container .tab-content {
+      width: 100%; }
+      .course-container .tab-content .tab-pane {
+        padding: 0 10px; }
+      .course-container .tab-content .t-name h2 {
+        font-size: 20px !important; }
+      .course-container .tab-content .tab-section {
+        padding: 20px !important; }
     .course-container .category-text .cat-number {
       display: none; }
     .course-container .d-flex {
@@ -1615,6 +1790,11 @@ footer {
       .certificate-container .cert-box .d-flex .cert-info span {
         margin: 10px 0; }
 
+  .b-banner {
+    height: 100vh; }
+
+  .course-banner .blue-bg {
+    height: 100vh; }
   .course-banner .banner-text {
     top: 20%; }
     .course-banner .banner-text .search-container {
@@ -1635,6 +1815,13 @@ footer {
             border-bottom: 1px solid #E2E2E2;
             margin-bottom: 10px; }
 
+  .course-page-b .course-page-slider {
+    width: 95%; }
+    .course-page-b .course-page-slider .course-box img {
+      width: 100%;
+      height: unset; }
+    .course-page-b .course-page-slider .cert-link a img {
+      width: 20px; }
   .course-page-b .common-title {
     width: 95%; }
   .course-page-b .finished-courses {
@@ -1658,5 +1845,16 @@ footer {
           width: 100%; }
       .user-page .user-container .user-form .change-button {
         width: 100%; } }
+@media only screen and (max-width: 576px) {
+  .course-container .nav-tabs {
+    width: 100%;
+    flex-direction: column; }
+
+  .course-container .tab-content .tab-right .t-section img {
+    width: 100px;
+    height: 100px; }
+
+  .course-container .tab-content .tab-right .t-section .t-name {
+    margin: 0 0 10px; } }
 
 /*# sourceMappingURL=main.css.map */

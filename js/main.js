@@ -23,22 +23,19 @@ $('.main-slider').slick({
 
 
 $('.review-slider').slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     dots:false,
     arrows:true,
 
+
     responsive:[
         
         {
             breakpoint: 992,
-            settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows:false,
-            dots:true,
-            }
+            settings: "unslick"
+            
         },
     
     
@@ -49,7 +46,7 @@ $('.review-slider').slick({
 
 
 $('.video-container').slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     dots:false,
@@ -94,7 +91,7 @@ $('.about-slider').slick({
 });
 
 $('.donor-slider').slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 4,
     slidesToScroll: 1,
     dots:false,
@@ -117,7 +114,7 @@ $('.donor-slider').slick({
 
 
 $('.course-page-slider').slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 4,
     slidesToScroll: 1,
     dots:false,
@@ -130,6 +127,8 @@ $('.course-page-slider').slick({
             settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
+            dots:true,
+            arrows:false,
             }
         },
     
@@ -141,7 +140,7 @@ $('.course-page-slider').slick({
 
 
 $('.category-slider').slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     dots:false,
