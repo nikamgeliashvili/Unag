@@ -40,6 +40,70 @@
         }
     }
 
+
+
+
+
+
+    .test-container{
+
+        .fixed-answer{
+
+            width: 70px;
+            height: 70px;
+            right: 10px;
+            top: 110px;
+
+            .bold{
+                font-size: 22px;
+            }
+
+            span{
+                font-size: 14px;
+            }
+        }
+
+        .test-box{
+            .point{
+                top: 49px;
+                right:20px;
+            }
+        }
+
+        .test-result{
+
+            .finish-test{
+                padding: 50px 0px 120px;
+                width: 100%;
+
+                a{
+                    padding: 20px;
+                }
+            }
+
+            .test-button{
+                flex-direction: column;
+                line-height: 70px;
+
+                .continue{
+                    padding: 20px 47px;
+                }
+            }
+        }
+        
+        .title{
+            .t-bottom{
+                width: 100%;
+            }
+        }
+
+        .test-box{
+            width: 100%;
+            margin: 20px auto;
+            padding: unset;
+        }
+    }
+
     #nav-icon1 {
         display: block;
         margin: 0;
