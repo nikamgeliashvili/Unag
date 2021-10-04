@@ -109,7 +109,7 @@ a:hover {
     background:#57A3C2;
     border-radius:10px;
     color: white;
-    padding: 8px 18px;
+    padding: 7px;
     transition: .3s;
 
     &:hover{
@@ -153,7 +153,7 @@ a:hover {
 .t-button{
     border-radius:10px;
     color: white;
-    padding: 7px 18px;
+    padding: 7px;
     border: 1px solid #FFFFFF;
     transition: .3s;
 
@@ -210,6 +210,10 @@ a:hover {
     padding: 30px 5%;
     z-index: 900;
     box-shadow: 0px 0px 4px 5px;
+
+    .auth-info{
+        padding-bottom: 10px;
+    }
 
 
     button{
@@ -604,6 +608,25 @@ header{
             }
         }
 
+    }
+}
+
+.video-tags{
+    line-height: 30px;
+    padding: 0 10px 15px;
+
+    a{
+        color: #2C3E50;
+        border: 1px solid #2C3E503D;
+        border-radius: 5px;
+        font-size: 14px;
+        padding:5px;
+        transition: .3s;
+        font-family: 'Conv_bpg_arial_2009';
+
+        &:hover{
+            border: 1px solid #2C3E50;
+        }
     }
 }
 

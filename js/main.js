@@ -244,6 +244,11 @@ $("#registration-form").click(function () {
     $(".auth-form").css("display", "none");
 });
 
+
+$(".course-button a").click(function () {
+    $(".auth-form2").css("display", "block");
+});
+
 $(".pas-restore").click(function () {
     $(".password-restore").css("display", "block");
     $(".auth-form").css("display", "none");
