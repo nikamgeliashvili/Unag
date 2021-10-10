@@ -947,6 +947,186 @@ footer {
     width: 100%;
     height: 60vh; }
 
+.course-page-container {
+  display: flex;
+  min-height: 100vh;
+  /* Style the tab */
+  /* Style the buttons inside the tab */
+  /* Change background color of buttons on hover */
+  /* Create an active/current "tab button" class */
+  /* Style the tab content */ }
+  .course-page-container .tab {
+    float: left;
+    border-right: 1px solid #D1D1D1;
+    width: 35%;
+    min-height: 100vh; }
+    .course-page-container .tab .main-title {
+      font-size: 24px; }
+    .course-page-container .tab .test {
+      color: white;
+      background: #57A3C2;
+      justify-content: center;
+      border-radius: 8px;
+      border: unset;
+      width: 90%;
+      margin: 30px auto; }
+      .course-page-container .tab .test svg {
+        margin-right: 10px; }
+    .course-page-container .tab .disable {
+      pointer-events: none;
+      opacity: .7; }
+  .course-page-container .tab button {
+    display: block;
+    color: #474747;
+    padding: 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Conv_bpg-web-001-caps-webfont';
+    border-bottom: 1px solid #D1D1D1;
+    background: white; }
+    .course-page-container .tab button svg {
+      transition: .3s; }
+    .course-page-container .tab button .active-title {
+      background-color: #4C9BCC;
+      color: white; }
+      .course-page-container .tab button .active-title #Path_304 {
+        fill: white; }
+  .course-page-container .tab .b-button {
+    background-color: #4C9BCC;
+    color: white; }
+    .course-page-container .tab .b-button #Path_304 {
+      fill: white; }
+  .course-page-container .tab button:hover {
+    background-color: #4C9BCC;
+    color: white; }
+    .course-page-container .tab button:hover #Path_304 {
+      fill: white; }
+  .course-page-container .tab-active {
+    transform: rotate(180deg);
+    transition: .3s; }
+    .course-page-container .tab-active #Path_304 {
+      fill: white; }
+  .course-page-container .tabcontent {
+    padding: 0px 12px;
+    width: 65%;
+    border-left: none;
+    padding: 50px 70px; }
+    .course-page-container .tabcontent .video-page-container {
+      width: 100%;
+      padding: unset; }
+      .course-page-container .tabcontent .video-page-container .components svg {
+        width: 45px;
+        height: 45px;
+        box-shadow: 0px 0px 5px #00000029;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 20px 10px 20px 20px;
+        transition: .3s; }
+      .course-page-container .tabcontent .video-page-container .components a {
+        color: #2C3E50;
+        font-size: 18px;
+        font-family: 'Conv_bpg-web-001-caps-webfont';
+        transition: .3s;
+        display: flex;
+        align-items: center; }
+        .course-page-container .tabcontent .video-page-container .components a:hover {
+          color: #3498DB; }
+          .course-page-container .tabcontent .video-page-container .components a:hover svg path {
+            fill: red !important; }
+      .course-page-container .tabcontent .video-page-container .about-us .about-slider {
+        width: 100%;
+        max-height: 350px;
+        overflow: hidden;
+        height: 60vh; }
+      .course-page-container .tabcontent .video-page-container iframe {
+        height: 60p; }
+      .course-page-container .tabcontent .video-page-container .video-title {
+        text-align: left;
+        padding: 20px 0 15px; }
+      .course-page-container .tabcontent .video-page-container form {
+        margin: 50px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Conv_bpg-web-001-caps-webfont'; }
+        .course-page-container .tabcontent .video-page-container form a {
+          color: #57A3C2;
+          font-family: 'Conv_bpg-web-001-caps-webfont';
+          background: #F2F2F2;
+          padding: 15px 20px 12px;
+          border-radius: 10px;
+          font-family: 'Conv_bpg-web-001-caps-webfont';
+          background: #F2F2F2;
+          padding: 15px 20px 12px;
+          border-radius: 10px;
+          border: 1px solid #57A3C2; }
+        .course-page-container .tabcontent .video-page-container form .next {
+          background: #57A3C2;
+          display: flex;
+          align-items: center;
+          padding: 0 15px 0 20px;
+          border-radius: 8px;
+          margin-left: 20px;
+          position: relative; }
+          .course-page-container .tabcontent .video-page-container form .next input {
+            position: relative;
+            width: 15px;
+            height: 15px; }
+          .course-page-container .tabcontent .video-page-container form .next input[type=checkbox]:before {
+            content: "";
+            background: #57A3C2;
+            border-radius: 4px;
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            border: 1px solid white;
+            top: -3px; }
+          .course-page-container .tabcontent .video-page-container form .next input:checked ~ .checkmark:after {
+            display: block; }
+          .course-page-container .tabcontent .video-page-container form .next .checkmark:after {
+            display: none;
+            content: "";
+            position: absolute;
+            left: 26px;
+            top: 15px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
+        .course-page-container .tabcontent .video-page-container form label {
+          color: white;
+          margin-bottom: 0;
+          padding: 11px; }
+  .course-page-container .button-content {
+    padding: 15px;
+    display: none; }
+    .course-page-container .button-content .d-flex {
+      padding-bottom: 10px; }
+      .course-page-container .button-content .d-flex a {
+        display: flex;
+        align-items: center;
+        color: #474747;
+        font-family: 'Conv_bpg_arial_2009'; }
+        .course-page-container .button-content .d-flex a svg {
+          margin-right: 10px; }
+      .course-page-container .button-content .d-flex .active-l {
+        color: #3498DB; }
+        .course-page-container .button-content .d-flex .active-l svg path {
+          fill: #3498DB; }
+  .course-page-container .open {
+    display: block; }
+
 .course-banner {
   width: 100%;
   height: 80vh;
@@ -1687,6 +1867,24 @@ footer {
     margin-top: unset; }
     footer .social-links ul {
       justify-content: unset; }
+
+  .course-page-container {
+    flex-direction: column-reverse; }
+    .course-page-container .tabcontent {
+      width: 100%;
+      padding: 50px 20px; }
+      .course-page-container .tabcontent form {
+        flex-direction: column; }
+        .course-page-container .tabcontent form .next {
+          margin-top: 25px;
+          margin-left: unset !important; }
+        .course-page-container .tabcontent form a {
+          padding: 15px 100px 12px !important; }
+      .course-page-container .tabcontent .about-slider {
+        height: unset !important; }
+    .course-page-container .tab {
+      width: 100%;
+      border-right: unset; }
 
   .video-page-container {
     width: 100%; }

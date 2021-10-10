@@ -177,6 +177,28 @@ $('.dropdown-box').on('click',function(){
 })
 
 
+
+
+
+$('.tablinks').on('click',function(){
+    $(this).next($('.button-content')).slideToggle()
+})
+
+$('.tablinks').on('click',function(){
+    $(this).children().toggleClass('tab-active')
+})
+
+$(".tablinks").on("click", function () {
+    $(this).toggleClass('b-button')
+  });
+
+
+
+
+
+
+
+
 $(".dropdown-box").on("click", function () {
     $(this)
       .find($("svg"))

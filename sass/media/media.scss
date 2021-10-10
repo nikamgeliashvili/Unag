@@ -42,8 +42,44 @@
 
 
 
+
+    .course-page-container{
+        flex-direction: column-reverse;
+
+        .tabcontent{
+            width: 100%;
+            padding: 50px 20px;
+
+            form{
+                flex-direction: column;
+
+                .next{
+                    margin-top: 25px;
+                    margin-left: unset !important;
+                }
+
+                a{
+                    padding: 15px 100px 12px !important;
+                }
+            }
+
+
+            .about-slider{
+                height: unset !important;
+            }
+        }
+
+        .tab{
+            width:100%;
+            border-right: unset;
+        }
+    }
+
+
     .video-page-container{
         width: 100%;
+
+      
     }
 
 

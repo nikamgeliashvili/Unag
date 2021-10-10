@@ -180,3 +180,311 @@
         height: 60vh;
     }
 }
+
+
+
+
+
+.course-page-container{
+    display: flex;
+
+    min-height: 100vh;
+         /* Style the tab */
+    .tab {
+        float: left;
+        border-right: 1px solid #D1D1D1;
+        width: 35%;
+        min-height: 100vh;
+        
+
+        .main-title{
+            font-size: 24px;
+        }
+
+        .test{
+            color: white;
+            background: #57A3C2;
+            justify-content: center;
+            border-radius: 8px;
+            border: unset;
+            width: 90%;
+            margin: 30px auto;
+
+            svg{
+                margin-right: 10px;
+            }
+        }
+
+        .disable{
+            pointer-events: none;
+            opacity: .7;
+        }
+    }
+          
+        /* Style the buttons inside the tab */
+    .tab{
+        button {
+            display: block;
+            color: #474747;
+            padding:16px;
+            width: 100%;
+            border: none;
+            outline: none;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 17px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'Conv_bpg-web-001-caps-webfont';
+            border-bottom: 1px solid #D1D1D1;
+            background: white;
+    
+           
+    
+            svg{
+                transition: .3s;
+            }
+
+
+            .active-title{
+                background-color: #4C9BCC;
+                color: white;
+
+                #Path_304{
+                    fill:white;
+            
+                }
+            }
+        }
+
+        .b-button{
+            background-color: #4C9BCC;
+            color: white;
+
+            #Path_304{
+                fill:white;
+        
+            }
+        }
+
+       
+    } 
+
+
+        
+        /* Change background color of buttons on hover */
+    .tab button:hover {
+        background-color: #4C9BCC;
+        color: white;
+
+        #Path_304{
+            fill:white;
+            
+        }
+    }
+        
+    /* Create an active/current "tab button" class */
+    // .tab button.active {
+    //     background-color: #4C9BCC;
+    //     color: white;
+
+      
+    // }
+
+
+    .tab-active{
+        transform: rotate(180deg);
+        transition: .3s;
+
+        #Path_304{
+            fill:white;
+            
+        }
+    }
+        
+        /* Style the tab content */
+    .tabcontent {        
+        padding: 0px 12px;
+        width: 65%;
+        border-left: none;
+        padding: 50px 70px;
+    
+
+        .video-page-container{
+            width: 100%;
+            padding: unset;
+
+
+            .components{
+
+                svg{
+                   
+                    width: 45px;
+                    height: 45px;
+                    box-shadow: 0px 0px 5px #00000029;
+                    padding: 10px;
+                    border-radius: 5px;
+                    margin: 20px 10px 20px 20px;
+                    transition: .3s;
+
+
+                }
+
+                a{
+                    color:#2C3E50;
+                    font-size: 18px;
+                    font-family: 'Conv_bpg-web-001-caps-webfont';
+                    transition: .3s;
+                    display: flex;
+                    align-items: center;
+
+
+                    &:hover{
+                        color:#3498DB;
+
+                        svg{
+                            path{
+                                fill: red !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            .about-us .about-slider {
+                width: 100%;
+                max-height: 350px;
+                overflow: hidden;
+                height: 60vh;
+            }
+
+            iframe{
+                height: 60p;
+            }
+
+            .video-title{
+                text-align: left;
+                padding: 20px 0 15px;
+            }
+
+            form{
+                margin: 50px auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Conv_bpg-web-001-caps-webfont';
+
+
+                a{
+                    color: #57A3C2;
+                    font-family: 'Conv_bpg-web-001-caps-webfont';
+                    background: #F2F2F2;
+                    padding: 15px 20px 12px;
+                    border-radius: 10px;
+                    font-family: 'Conv_bpg-web-001-caps-webfont';
+                    background: #F2F2F2;
+                    padding: 15px 20px 12px;
+                    border-radius: 10px;
+                    border: 1px solid #57A3C2;;
+
+
+                }
+
+                .next{
+                    background: #57A3C2;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 15px 0 20px;
+                    border-radius: 8px;
+                    margin-left: 20px;
+                    position: relative;
+
+                    input{
+                        position: relative;
+                        width: 15px;
+                        height: 15px;
+                    }
+
+                    input[type=checkbox]:before{
+                        content: "";
+                        background: #57A3C2;
+                        border-radius: 4px;
+                        width: 18px;
+                        height: 18px;
+                        position: absolute;
+                        border: 1px solid white;
+                        top: -3px;
+                    }
+
+                    input:checked ~ .checkmark:after {
+                        display: block;
+                      }
+
+                    .checkmark:after {
+                        display: none;
+                        content: "";
+                        position: absolute;
+                        left: 26px;
+                        top: 15px;
+                        width: 5px;
+                        height: 10px;
+                        border: solid white;
+                        border-width: 0 3px 3px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                                            }
+
+                }
+
+                label{
+                    color: white;
+                    margin-bottom: 0;
+                    padding:11px;
+                }
+            }
+        }
+        
+    }
+
+
+    .button-content{
+        padding: 15px;
+        display: none;
+
+        .d-flex{
+            padding-bottom: 10px;
+
+            a{
+                display: flex;
+                align-items: center;
+                color: #474747;
+                font-family: 'Conv_bpg_arial_2009';
+
+                svg{
+                    margin-right: 10px;
+                }
+            }
+
+            .active-l{
+                color:#3498DB;
+
+
+                svg path{
+                    fill: #3498DB;
+                }
+
+
+            }
+        }
+    }
+
+    .open{
+        display: block;
+    }
+
+   
+}
