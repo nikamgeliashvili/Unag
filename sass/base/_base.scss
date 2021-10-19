@@ -376,6 +376,54 @@ header{
     font-family: 'Conv_bpg-web-001-caps-webfont';
 
    
+    .main-logo img{
+        width: 150px;
+        height:60px
+    }
+
+
+    .header-right{
+        position: relative;
+        
+        .user{
+            display: flex;
+            background: #57A3C2;
+            padding: 10px 15px;
+            border-radius: 10px;
+            position: absolute;
+            top: -25px;
+            right: 6px;
+   
+
+            .user-img{
+                margin-top: 6px;
+
+                img{
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                }
+            }
+
+            ul{
+                display: flex;
+                flex-direction: column;
+                
+
+                .user-name{
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                }
+
+            }
+
+            .hide{
+                height: 35px;
+                overflow: hidden;
+            }
+        }
+    }
 
     .header-left, .header-right{
         ul{
@@ -401,6 +449,11 @@ header{
         }
     }
 
+}
+
+
+.main-header .main-logo img{
+    height:40px !important;
 }
 
 .reg-button{
@@ -635,6 +688,46 @@ header{
     
     .video-box{
         width: 32%;
+        position: relative;
+        transition: .4s;
+
+
+       &:hover{
+            .video-hover{
+                display: block;
+            }
+        }
+
+        .video-hover{
+            display: none;
+            position: absolute;
+            top: 65px;
+            left: calc(50% - 28px);
+            pointer-events: none;
+            border: 7px solid rgba(87,163,174, 0.5);
+            border-radius: 50%;
+            transition: .3s;
+            opacity: .8;
+
+            img{
+                padding: 7px;
+                background:rgba(87,163,174, 0.9) ;
+                border-radius: 50%;
+            }
+        }
+
+        .video-hover:before {
+            content: " ";
+            position: absolute;
+            z-index: -1;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            border: 10px solid rgba(87,163,174, 0.9);
+            background:rgba(87,163,174, 0.9) ;
+            border-radius: 50%;
+          }
     }
 }
 

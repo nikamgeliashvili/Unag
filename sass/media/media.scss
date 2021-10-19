@@ -666,6 +666,21 @@
         .d-flex{
             flex-direction: column;
 
+
+            .b-date{
+                margin-left: 10px;
+                width: unset;
+                margin-right: 10px;
+                text-align: center;
+            }
+
+            .b-name{
+                text-align: center;
+                margin-left: 10px;
+                width: unset;
+                margin-right: 10px;
+            }
+
             .cert-img img{
                 width: 100%;
                 overflow: hidden;

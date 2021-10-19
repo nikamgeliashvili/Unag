@@ -193,6 +193,12 @@ $(".tablinks").on("click", function () {
   });
 
 
+ 
+
+
+
+
+
 
 
 
@@ -228,6 +234,16 @@ $(".see-more span").on("click", function () {
 
 
 
+  $(".user-name").on("click", function () {
+    $('.user-dropdown').toggleClass('rotate')
+
+  });
+
+  
+  $(".user-name").on("click", function () {
+    $('.user-info').toggleClass('hide')
+
+  });
 
 
   
