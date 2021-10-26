@@ -196,7 +196,7 @@
 
         .header-left{
             position: absolute;
-            top: 242px;
+            top: 212px;
             width: 100%;
             background: white;
             opacity: 0;
@@ -205,6 +205,7 @@
             padding-bottom: 30px;
             transition: .4s;
             pointer-events: none;
+            padding-top: 30px;
 
           
 
@@ -243,6 +244,34 @@
             left: 0;
             padding: 30px 0;
             transition: .4s;
+
+
+
+            .user{
+                margin: 0 auto;
+                width: fit-content;
+            }
+
+            .user-drop{
+                position: unset;
+            }
+
+            .filter-box{
+                display: block;
+                width: fit-content;
+                margin: 15px auto;
+                border: 1px solid #E2E2E2;;
+            }
+
+            .filter-box:after {
+                border: 1px solid #E2E2E2;
+                top: 98px;
+                left: 49%;
+                border-right: unset;
+                border-bottom: unset;
+            }
+
+
           
 
             ul{

@@ -272,14 +272,32 @@ header {
     width: 150px;
     height: 60px; }
   header .header-right {
-    position: relative; }
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; }
+    header .header-right .hide {
+      display: none; }
+    header .header-right .user-drop {
+      top: 75px;
+      left: unset;
+      display: block;
+      text-align: center;
+      min-width: 230px;
+      display: none; }
+      header .header-right .user-drop .filter-top {
+        padding: 10px 8px 8px; }
+      header .header-right .user-drop a {
+        color: #2C3E50;
+        transition: .3s; }
+        header .header-right .user-drop a:hover {
+          color: #57A3C2; }
     header .header-right .user {
       display: flex;
       background: #57A3C2;
-      padding: 10px 15px;
+      padding: 10px 50px;
       border-radius: 10px;
-      position: absolute;
-      top: -25px;
+      top: -10px;
       right: 6px; }
       header .header-right .user .user-img {
         margin-top: 6px; }
@@ -294,9 +312,6 @@ header {
           display: flex;
           align-items: center;
           cursor: pointer; }
-      header .header-right .user .hide {
-        height: 35px;
-        overflow: hidden; }
   header .header-left ul, header .header-right ul {
     display: flex;
     align-items: center; }
@@ -1046,7 +1061,6 @@ footer {
     height: 60vh; }
 
 .course-page-container {
-  display: flex;
   min-height: 100vh;
   /* Style the tab */
   /* Style the buttons inside the tab */
@@ -1274,34 +1288,35 @@ footer {
           border-radius: 7px;
           padding: 10px 30px;
           cursor: pointer; }
-      .course-banner .search-container .search-form .filter-box {
-        position: absolute;
-        top: 60px;
-        background: white;
-        border-radius: 7px;
-        left: -7px;
-        padding: 20px;
-        text-align: left;
-        display: none; }
-        .course-banner .search-container .search-form .filter-box .filter-top {
-          border-bottom: 1px solid #E2E2E2; }
-        .course-banner .search-container .search-form .filter-box .filter-bottom {
-          margin-top: 10px; }
-        .course-banner .search-container .search-form .filter-box:after {
-          content: "";
-          width: 15px;
-          height: 15px;
-          background: white;
-          z-index: 222222;
-          font-size: 10px;
-          position: absolute;
-          top: -6px;
-          left: 48%;
-          transform: rotate(45deg); }
   .course-banner .video-search .search-input {
     width: 100% !important; }
     .course-banner .video-search .search-input input {
       border-left: unset !important; }
+
+.filter-box {
+  position: absolute;
+  top: 60px;
+  background: white;
+  border-radius: 7px;
+  left: -7px;
+  padding: 20px;
+  text-align: left;
+  display: none; }
+  .filter-box .filter-top {
+    border-bottom: 1px solid #E2E2E2; }
+  .filter-box .filter-bottom {
+    margin-top: 10px; }
+  .filter-box:after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: white;
+    z-index: 222222;
+    font-size: 10px;
+    position: absolute;
+    top: -6px;
+    left: 48%;
+    transform: rotate(45deg); }
 
 .course-container {
   padding: 30px 0;
@@ -2045,7 +2060,7 @@ footer {
       opacity: 1 !important; }
     header .header-left {
       position: absolute;
-      top: 242px;
+      top: 212px;
       width: 100%;
       background: white;
       opacity: 0;
@@ -2053,7 +2068,8 @@ footer {
       left: 0;
       padding-bottom: 30px;
       transition: .4s;
-      pointer-events: none; }
+      pointer-events: none;
+      padding-top: 30px; }
       header .header-left ul {
         flex-direction: column; }
         header .header-left ul li {
@@ -2075,6 +2091,22 @@ footer {
       left: 0;
       padding: 30px 0;
       transition: .4s; }
+      header .header-right .user {
+        margin: 0 auto;
+        width: fit-content; }
+      header .header-right .user-drop {
+        position: unset; }
+      header .header-right .filter-box {
+        display: block;
+        width: fit-content;
+        margin: 15px auto;
+        border: 1px solid #E2E2E2; }
+      header .header-right .filter-box:after {
+        border: 1px solid #E2E2E2;
+        top: 98px;
+        left: 49%;
+        border-right: unset;
+        border-bottom: unset; }
       header .header-right ul {
         flex-direction: column-reverse; }
 

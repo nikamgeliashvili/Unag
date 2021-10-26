@@ -384,14 +384,49 @@ header{
 
     .header-right{
         position: relative;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+
+        .hide{
+            display: none;
+        }
+
+
+        .user-drop{
+            top: 75px;
+            left: unset;
+            display: block;
+            text-align: center;
+             min-width: 230px;
+             display: none;
+
+
+             .filter-top{
+                  padding: 10px 8px 8px;
+                  
+             }
+
+             
+
+             a{
+                color: #2C3E50;
+                transition: .3s;
+
+
+                &:hover{
+                    color:#57A3C2;
+                }
+             }
+            
+        }
 
         .user{
             display: flex;
             background: #57A3C2;
-            padding: 10px 15px;
+            padding: 10px 50px;
             border-radius: 10px;
-            position: absolute;
-            top: -25px;
+            top: -10px;
             right: 6px;
    
 
@@ -418,10 +453,7 @@ header{
 
             }
 
-            .hide{
-                height: 35px;
-                overflow: hidden;
-            }
+           
         }
     }
 

@@ -241,7 +241,7 @@ $(".see-more span").on("click", function () {
 
   
   $(".user-name").on("click", function () {
-    $('.user-info').toggleClass('hide')
+    $('.user-drop').slideToggle()
 
   });
 
