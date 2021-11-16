@@ -13,7 +13,7 @@
         .def-text{
             width: 50%;
             padding-right: 20px;
-            max-height: 330px;
+            max-height: 335px;
             overflow: hidden;
 
         }
@@ -62,7 +62,7 @@
     }
 
     .donor-slider{
-
+        padding-bottom: 50px;
         .donor-slide{
             border: 1px solid #E6E6E6;
             min-height: 170px;
@@ -115,7 +115,7 @@
 
     .dropdown{
         width: 85%;
-        margin: 0 auto;
+        margin: 0 auto 50px;
 
         .dropdown-box{
             display: flex;
@@ -187,9 +187,9 @@
 
 .course-page-container{
   
-
+    display: flex;
     min-height: 100vh;
-         /* Style the tab */
+    
     .tab {
         float: left;
         border-right: 1px solid #D1D1D1;

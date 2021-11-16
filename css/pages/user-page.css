@@ -1,0 +1,85 @@
+.user-page {
+  background-color: #F2F2F2;
+  padding-bottom: 50px; }
+  .user-page .user-container {
+    width: 80%;
+    margin: 0 auto;
+    background: #ffffff;
+    display: flex;
+    padding: 30px; }
+    .user-page .user-container .avatar-upload {
+      width: 40%;
+      margin: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #BBC8D3;
+      padding: 40px 0 140px;
+      max-height: 340px; }
+    .user-page .user-container .user-form {
+      width: 60%;
+      display: block;
+      box-shadow: unset;
+      position: unset;
+      margin-top: unset;
+      padding: 10px;
+      border-radius: unset; }
+      .user-page .user-container .user-form .d-flex {
+        justify-content: space-between; }
+        .user-page .user-container .user-form .d-flex .field {
+          width: 49%;
+          margin-bottom: 20px; }
+        .user-page .user-container .user-form .d-flex .form-select {
+          width: 49%; }
+          .user-page .user-container .user-form .d-flex .form-select select {
+            margin-bottom: 20px; }
+          .user-page .user-container .user-form .d-flex .form-select span {
+            position: absolute;
+            line-height: 20px;
+            font-size: 12px;
+            top: -10px;
+            background: #fff;
+            padding: 0 6px;
+            left: 9px;
+            color: #777; }
+      .user-page .user-container .user-form .d-border {
+        border-top: 1px solid #BBC8D3;
+        padding-top: 20px; }
+      .user-page .user-container .user-form button {
+        background-color: #DBE3EB;
+        color: #2C3E50;
+        margin: 0 auto 20px; }
+      .user-page .user-container .user-form .change-button {
+        width: 50%;
+        float: right;
+        color: white;
+        background: #57A3C2;
+        transition: .3s;
+        font-family: 'Conv_bpg-web-001-caps-webfont'; }
+        .user-page .user-container .user-form .change-button:hover {
+          background: #F8C934;
+          color: white; }
+
+.video-page-container {
+  width: 55%;
+  margin: 0 auto;
+  padding: 50px 15px; }
+  .video-page-container .main-video iframe {
+    width: 100%;
+    height: 50vh; }
+  .video-page-container .video-title {
+    color: #2C3E50;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+    font-family: 'BPG WEB 001'; }
+  .video-page-container .video-text {
+    color: #2C3E50;
+    font-size: 16px;
+    font-family: 'Conv_bpg_arial_2009'; }
+  .video-page-container .video-tags {
+    padding: 0 0px 15px; }
+    .video-page-container .video-tags a {
+      background: white; }
+
+/*# sourceMappingURL=user-page.css.map */

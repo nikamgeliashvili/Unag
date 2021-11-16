@@ -320,6 +320,9 @@ header {
       padding: 8px 18px;
       display: flex;
       align-items: center; }
+      header .header-left ul li a:hover, header .header-right ul li a:hover {
+        transition: .3s;
+        transform: scale(1.1); }
       header .header-left ul li a span, header .header-right ul li a span {
         margin-top: 3px; }
 
@@ -584,7 +587,7 @@ header {
   border-radius: 50%; }
 
 footer {
-  background: #5A5A5A;
+  background: linear-gradient(45deg, #444 0%, #555 47%, #333 100%);
   font-family: 'Conv_bpg_arial_2009'; }
   footer .footer-title {
     font-size: 22px;
@@ -677,7 +680,8 @@ footer {
   margin: 0 auto 30px;
   color: #2C3E50; }
   .main-container .main-text p {
-    font-family: 'Conv_bpg_arial_2009'; }
+    font-family: 'Conv_bpg_arial_2009';
+    text-align: justify; }
 .main-container .category-container, .main-container .category-slider {
   width: 100%;
   background: #F2F2F2;
@@ -698,7 +702,7 @@ footer {
       filter: brightness(70%); }
     .main-container .category-container .category .category-title, .main-container .category-slider .category .category-title {
       position: absolute;
-      bottom: -20px;
+      bottom: 0;
       color: white;
       width: 100%;
       pointer-events: none;
@@ -710,7 +714,9 @@ footer {
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: white;
         font-size: 70px;
-        padding: 0 20% 40px 10px; }
+        padding: 0 7% 25px 15px; }
+      .main-container .category-container .category .category-title span, .main-container .category-slider .category .category-title span {
+        max-height: 100px; }
     .main-container .category-container .category .category-info, .main-container .category-slider .category .category-info {
       width: 100%;
       height: 100%;
@@ -776,7 +782,8 @@ footer {
   .main-container .course-section .describe {
     width: 50%;
     padding: 20px;
-    background: white; }
+    background: white;
+    padding-top: 0; }
     .main-container .course-section .describe .describe-text {
       max-height: 285px;
       overflow: hidden; }
@@ -955,7 +962,7 @@ footer {
     .about-container .about-us .def-text {
       width: 50%;
       padding-right: 20px;
-      max-height: 330px;
+      max-height: 335px;
       overflow: hidden; }
     .about-container .about-us .about-slider {
       width: 50%;
@@ -983,42 +990,44 @@ footer {
         content: url(../images/arr-prev.png); }
       .about-container .about-us .about-slider .slick-next:before {
         content: url(../images/arr-next.png); }
-  .about-container .donor-slider .donor-slide {
-    border: 1px solid #E6E6E6;
-    min-height: 170px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px; }
-  .about-container .donor-slider .slick-prev {
-    left: -10px;
-    z-index: 111;
-    background: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    padding: 10px 3px 10px 0;
-    box-shadow: 0px 0px 12px #00000029; }
-  .about-container .donor-slider .slick-next {
-    right: -10px;
-    z-index: 111;
-    background: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    padding: 10px 0 10px 4px;
-    box-shadow: 0px 0px 12px #00000029; }
-  .about-container .donor-slider .slick-prev:before {
-    content: url(../images/arr-prev.png); }
-  .about-container .donor-slider .slick-next:before {
-    content: url(../images/arr-next.png); }
+  .about-container .donor-slider {
+    padding-bottom: 50px; }
+    .about-container .donor-slider .donor-slide {
+      border: 1px solid #E6E6E6;
+      min-height: 170px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px; }
+    .about-container .donor-slider .slick-prev {
+      left: -10px;
+      z-index: 111;
+      background: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      padding: 10px 3px 10px 0;
+      box-shadow: 0px 0px 12px #00000029; }
+    .about-container .donor-slider .slick-next {
+      right: -10px;
+      z-index: 111;
+      background: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      padding: 10px 0 10px 4px;
+      box-shadow: 0px 0px 12px #00000029; }
+    .about-container .donor-slider .slick-prev:before {
+      content: url(../images/arr-prev.png); }
+    .about-container .donor-slider .slick-next:before {
+      content: url(../images/arr-next.png); }
   .about-container .dropdown-active {
     color: #2980B9; }
     .about-container .dropdown-active svg {
       fill: #2980B9; }
   .about-container .dropdown {
     width: 85%;
-    margin: 0 auto; }
+    margin: 0 auto 50px; }
     .about-container .dropdown .dropdown-box {
       display: flex;
       justify-content: space-between;
@@ -1061,8 +1070,8 @@ footer {
     height: 60vh; }
 
 .course-page-container {
+  display: flex;
   min-height: 100vh;
-  /* Style the tab */
   /* Style the buttons inside the tab */
   /* Change background color of buttons on hover */
   /* Create an active/current "tab button" class */
@@ -1405,7 +1414,7 @@ footer {
     .course-container .course-page-top .cert-link {
       padding: 16px; }
       .course-container .course-page-top .cert-link a {
-        color: #9070B8;
+        color: #57a3c2;
         font-family: 'BPG WEB 001'; }
     .course-container .course-page-top .button {
       font-family: 'BPG WEB 001';

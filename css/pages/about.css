@@ -1,0 +1,298 @@
+.about-container {
+  width: 80%;
+  margin: 0 auto; }
+  .about-container .title .main-title {
+    text-align: left;
+    padding-left: unset; }
+  .about-container .about-us {
+    display: flex; }
+    .about-container .about-us .def-text {
+      width: 50%;
+      padding-right: 20px;
+      max-height: 330px;
+      overflow: hidden; }
+    .about-container .about-us .about-slider {
+      width: 50%;
+      max-height: 350px;
+      overflow: hidden; }
+      .about-container .about-us .about-slider .about-slide img {
+        width: 100%; }
+      .about-container .about-us .about-slider .slick-prev {
+        left: 10px;
+        z-index: 111;
+        background: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        padding: 10px 3px 10px 0; }
+      .about-container .about-us .about-slider .slick-next {
+        right: 10px;
+        z-index: 111;
+        background: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        padding: 10px 0 10px 4px; }
+      .about-container .about-us .about-slider .slick-prev:before {
+        content: url(../images/arr-prev.png); }
+      .about-container .about-us .about-slider .slick-next:before {
+        content: url(../images/arr-next.png); }
+  .about-container .donor-slider {
+    padding-bottom: 50px; }
+    .about-container .donor-slider .donor-slide {
+      border: 1px solid #E6E6E6;
+      min-height: 170px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px; }
+    .about-container .donor-slider .slick-prev {
+      left: -10px;
+      z-index: 111;
+      background: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      padding: 10px 3px 10px 0;
+      box-shadow: 0px 0px 12px #00000029; }
+    .about-container .donor-slider .slick-next {
+      right: -10px;
+      z-index: 111;
+      background: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      padding: 10px 0 10px 4px;
+      box-shadow: 0px 0px 12px #00000029; }
+    .about-container .donor-slider .slick-prev:before {
+      content: url(../images/arr-prev.png); }
+    .about-container .donor-slider .slick-next:before {
+      content: url(../images/arr-next.png); }
+  .about-container .dropdown-active {
+    color: #2980B9; }
+    .about-container .dropdown-active svg {
+      fill: #2980B9; }
+  .about-container .dropdown {
+    width: 85%;
+    margin: 0 auto; }
+    .about-container .dropdown .dropdown-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      padding: 14px 0 8px;
+      transition: .3s;
+      margin: 10px 0; }
+      .about-container .dropdown .dropdown-box h2 {
+        font-family: 'Conv_bpg-web-001-caps-webfont';
+        font-size: 16px; }
+      .about-container .dropdown .dropdown-box svg {
+        transition: .3s; }
+      .about-container .dropdown .dropdown-box:hover {
+        color: #2980B9; }
+        .about-container .dropdown .dropdown-box:hover svg {
+          fill: #2980B9; }
+    .about-container .dropdown .dropdown-text {
+      display: none;
+      padding: 15px 25px;
+      font-family: 'Conv_bpg_arial_2009'; }
+
+.about-banner {
+  background: #57A3C2;
+  padding: 10px 30px 30px;
+  text-align: center;
+  margin: 30px auto; }
+  .about-banner .text {
+    width: 84%;
+    margin: 0 auto;
+    text-align: left;
+    color: white;
+    font-family: 'Conv_bpg_arial_2009'; }
+
+.map-container {
+  height: 60vh;
+  margin-top: 50px; }
+  .map-container .gmap_iframe {
+    width: 100%;
+    height: 60vh; }
+
+.course-page-container {
+  min-height: 100vh;
+  /* Style the tab */
+  /* Style the buttons inside the tab */
+  /* Change background color of buttons on hover */
+  /* Create an active/current "tab button" class */
+  /* Style the tab content */ }
+  .course-page-container .tab {
+    float: left;
+    border-right: 1px solid #D1D1D1;
+    width: 35%;
+    min-height: 100vh; }
+    .course-page-container .tab .main-title {
+      font-size: 24px; }
+    .course-page-container .tab .test {
+      color: white;
+      background: #57A3C2;
+      justify-content: center;
+      border-radius: 8px;
+      border: unset;
+      width: 90%;
+      margin: 30px auto; }
+      .course-page-container .tab .test svg {
+        margin-right: 10px; }
+    .course-page-container .tab .disable {
+      pointer-events: none;
+      opacity: .7; }
+  .course-page-container .tab button {
+    display: block;
+    color: #474747;
+    padding: 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Conv_bpg-web-001-caps-webfont';
+    border-bottom: 1px solid #D1D1D1;
+    background: white; }
+    .course-page-container .tab button svg {
+      transition: .3s; }
+    .course-page-container .tab button .active-title {
+      background-color: #4C9BCC;
+      color: white; }
+      .course-page-container .tab button .active-title #Path_304 {
+        fill: white; }
+  .course-page-container .tab .b-button {
+    background-color: #4C9BCC;
+    color: white; }
+    .course-page-container .tab .b-button #Path_304 {
+      fill: white; }
+  .course-page-container .tab button:hover {
+    background-color: #4C9BCC;
+    color: white; }
+    .course-page-container .tab button:hover #Path_304 {
+      fill: white; }
+  .course-page-container .tab-active {
+    transform: rotate(180deg);
+    transition: .3s; }
+    .course-page-container .tab-active #Path_304 {
+      fill: white; }
+  .course-page-container .tabcontent {
+    padding: 0px 12px;
+    width: 65%;
+    border-left: none;
+    padding: 50px 70px; }
+    .course-page-container .tabcontent .video-page-container {
+      width: 100%;
+      padding: unset; }
+      .course-page-container .tabcontent .video-page-container .components svg {
+        width: 45px;
+        height: 45px;
+        box-shadow: 0px 0px 5px #00000029;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 20px 10px 20px 20px;
+        transition: .3s; }
+      .course-page-container .tabcontent .video-page-container .components a {
+        color: #2C3E50;
+        font-size: 18px;
+        font-family: 'Conv_bpg-web-001-caps-webfont';
+        transition: .3s;
+        display: flex;
+        align-items: center; }
+        .course-page-container .tabcontent .video-page-container .components a:hover {
+          color: #3498DB; }
+          .course-page-container .tabcontent .video-page-container .components a:hover svg path {
+            fill: red !important; }
+      .course-page-container .tabcontent .video-page-container .about-us .about-slider {
+        width: 100%;
+        max-height: 350px;
+        overflow: hidden;
+        height: 60vh; }
+      .course-page-container .tabcontent .video-page-container iframe {
+        height: 60p; }
+      .course-page-container .tabcontent .video-page-container .video-title {
+        text-align: left;
+        padding: 20px 0 15px; }
+      .course-page-container .tabcontent .video-page-container form {
+        margin: 50px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Conv_bpg-web-001-caps-webfont'; }
+        .course-page-container .tabcontent .video-page-container form a {
+          color: #57A3C2;
+          font-family: 'Conv_bpg-web-001-caps-webfont';
+          background: #F2F2F2;
+          padding: 15px 20px 12px;
+          border-radius: 10px;
+          font-family: 'Conv_bpg-web-001-caps-webfont';
+          background: #F2F2F2;
+          padding: 15px 20px 12px;
+          border-radius: 10px;
+          border: 1px solid #57A3C2; }
+        .course-page-container .tabcontent .video-page-container form .next {
+          background: #57A3C2;
+          display: flex;
+          align-items: center;
+          padding: 0 15px 0 20px;
+          border-radius: 8px;
+          margin-left: 20px;
+          position: relative; }
+          .course-page-container .tabcontent .video-page-container form .next input {
+            position: relative;
+            width: 15px;
+            height: 15px; }
+          .course-page-container .tabcontent .video-page-container form .next input[type=checkbox]:before {
+            content: "";
+            background: #57A3C2;
+            border-radius: 4px;
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            border: 1px solid white;
+            top: -3px; }
+          .course-page-container .tabcontent .video-page-container form .next input:checked ~ .checkmark:after {
+            display: block; }
+          .course-page-container .tabcontent .video-page-container form .next .checkmark:after {
+            display: none;
+            content: "";
+            position: absolute;
+            left: 26px;
+            top: 15px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
+        .course-page-container .tabcontent .video-page-container form label {
+          color: white;
+          margin-bottom: 0;
+          padding: 11px; }
+  .course-page-container .button-content {
+    padding: 15px;
+    display: none; }
+    .course-page-container .button-content .d-flex {
+      padding-bottom: 10px; }
+      .course-page-container .button-content .d-flex a {
+        display: flex;
+        align-items: center;
+        color: #474747;
+        font-family: 'Conv_bpg_arial_2009'; }
+        .course-page-container .button-content .d-flex a svg {
+          margin-right: 10px; }
+      .course-page-container .button-content .d-flex .active-l {
+        color: #3498DB; }
+        .course-page-container .button-content .d-flex .active-l svg path {
+          fill: #3498DB; }
+  .course-page-container .open {
+    display: block; }
+
+/*# sourceMappingURL=about.css.map */
