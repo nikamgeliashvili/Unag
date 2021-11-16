@@ -9,7 +9,7 @@
     .about-container .about-us .def-text {
       width: 50%;
       padding-right: 20px;
-      max-height: 330px;
+      max-height: 335px;
       overflow: hidden; }
     .about-container .about-us .about-slider {
       width: 50%;
@@ -74,7 +74,7 @@
       fill: #2980B9; }
   .about-container .dropdown {
     width: 85%;
-    margin: 0 auto; }
+    margin: 0 auto 50px; }
     .about-container .dropdown .dropdown-box {
       display: flex;
       justify-content: space-between;
@@ -118,7 +118,6 @@
 
 .course-page-container {
   min-height: 100vh;
-  /* Style the tab */
   /* Style the buttons inside the tab */
   /* Change background color of buttons on hover */
   /* Create an active/current "tab button" class */

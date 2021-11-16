@@ -1070,7 +1070,6 @@ footer {
     height: 60vh; }
 
 .course-page-container {
-  display: flex;
   min-height: 100vh;
   /* Style the buttons inside the tab */
   /* Change background color of buttons on hover */
