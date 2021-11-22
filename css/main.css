@@ -366,8 +366,9 @@ header {
     border: unset; }
 
 .main-header {
-  position: unset;
-  box-shadow: 0px -4px 15px #6e6e6e; }
+  box-shadow: 0px -4px 15px #6e6e6e;
+  position: sticky;
+  background: white; }
   .main-header .header-left ul li a, .main-header header .header-right ul li a {
     color: #2C3E50;
     padding: 8px 18px;
@@ -505,7 +506,8 @@ header {
     overflow: hidden;
     background-color: white;
     margin: 5px;
-    position: relative; }
+    position: relative;
+    height: 280px; }
     .video-container .video-box video, .search-video-container .video-box video {
       width: 100%; }
     .video-container .video-box .video-title, .search-video-container .video-box .video-title {
@@ -520,7 +522,9 @@ header {
           color: #57A3C2; }
     .video-container .video-box .video-tags, .search-video-container .video-box .video-tags {
       line-height: 30px;
-      padding: 0 10px 15px; }
+      padding: 0 10px 15px;
+      height: 60px;
+      overflow: hidden; }
       .video-container .video-box .video-tags a, .search-video-container .video-box .video-tags a {
         color: #2C3E50;
         border: 1px solid #2C3E503D;
